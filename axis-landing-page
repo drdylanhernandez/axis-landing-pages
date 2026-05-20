@@ -825,13 +825,15 @@ section { padding:5.5rem 5vw; }
   border:1px solid var(--border);
   position:sticky; top:100px;
   background:var(--surface);
+  height:520px;
 }
 .faq-photo-panel img {
   width:100%;
-  height:auto;
+  height:100%;
   display:block;
   filter:brightness(.92);
-  object-fit:contain;
+  object-fit:cover;
+  object-position:center 20%;
 }
 @media(max-width:900px){
   .faq-inner { grid-template-columns:1fr; }
