@@ -1573,9 +1573,6 @@ footer {
         <div class="sec-eye reveal">Common Questions</div>
         <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
         <div class="faq-list">
-    <div class="sec-eye reveal">Common Questions</div>
-    <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
-    <div class="faq-list">
       <div class="faq-item reveal">
         <button class="faq-q" onclick="faq(this)">
           What's included in the $59 visit?
@@ -1611,11 +1608,16 @@ footer {
         </button>
         <div class="faq-a">The $59 new patient special is available at all Axis Spine and Sport locations: Gilbert, Tempe, and Phoenix. Visit our locations page for hours and directions.</div>
       </div>
-    </div>
+        </div><!-- end faq-list -->
     <div style="margin-top:2rem;" class="reveal">
       <a href="https://www.axisspineandsport.com/faq-about-chiropractor/" target="_blank" class="btn-ghost">See All FAQs →</a>
     </div>
-  </div>
+      </div><!-- end left col -->
+      <div class="faq-photo-panel reveal">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="Axis Spine and Sport interior">
+      </div>
+    </div><!-- end faq-inner -->
+  </div><!-- end sec-inner -->
 </section>
 
 <!-- FOOTER -->
