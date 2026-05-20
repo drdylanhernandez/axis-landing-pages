@@ -815,15 +815,24 @@ section { padding:5.5rem 5vw; }
 @media(max-width:768px){ .loc-grid { grid-template-columns:1fr; } }
 
 /* ── FAQ ── */
-.faq-sec { background:var(--bg); position:relative; overflow:hidden; }
-.faq-photo-bg {
-  position:absolute; inset:0; z-index:0;
+.faq-sec { background:var(--bg); }
+.faq-inner {
+  max-width:1100px; margin:0 auto;
+  display:grid; grid-template-columns:1fr 380px; gap:4rem; align-items:start;
 }
-.faq-photo-bg img {
-  width:100%; height:100%; object-fit:cover; object-position:center;
-  filter:brightness(.18) saturate(.5);
+.faq-photo-panel {
+  border-radius:8px; overflow:hidden;
+  border:1px solid var(--border);
+  position:sticky; top:100px;
 }
-.faq-sec .sec-inner { position:relative; z-index:1; }
+.faq-photo-panel img {
+  width:100%; height:100%; min-height:500px; object-fit:cover; object-position:center 30%;
+  display:block; filter:brightness(.88);
+}
+@media(max-width:900px){
+  .faq-inner { grid-template-columns:1fr; }
+  .faq-photo-panel { display:none; }
+}
 .faq-list { margin-top:2.5rem; max-width:700px; display:flex; flex-direction:column; gap:.7rem; }
 .faq-item { background:var(--surface); border:1px solid var(--border); border-radius:6px; overflow:hidden; }
 .faq-q {
@@ -962,8 +971,8 @@ footer {
 
 .trust-stat {
   flex:1;
-  max-width:280px;
-  padding:0 2rem;
+  max-width:320px;
+  padding:0 3rem;
 }
 
 .trust-stat-num {
@@ -987,7 +996,7 @@ footer {
 
 .trust-stat-divider {
   width:1px;
-  height:60px;
+  height:70px;
   background:var(--border);
   flex-shrink:0;
 }
@@ -996,7 +1005,7 @@ footer {
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:1.5rem;
+  gap:3rem;
   padding-top:1.75rem;
   border-top:1px solid var(--border);
 }
@@ -1004,16 +1013,16 @@ footer {
 .trust-badge {
   display:flex;
   align-items:center;
-  gap:.6rem;
+  gap:.75rem;
 }
 
-.trust-badge-icon { font-size:1rem; }
+.trust-badge-icon { font-size:1.4rem; flex-shrink:0; }
 
 .trust-badge-text {
   font-family:'Barlow Condensed', sans-serif;
   font-weight:700;
-  font-size:.82rem;
-  letter-spacing:.14em;
+  font-size:1.15rem;
+  letter-spacing:.1em;
   text-transform:uppercase;
   color:var(--gold);
 }
@@ -1025,10 +1034,11 @@ footer {
 }
 
 @media(max-width:640px){
-  .trust-stats-row { gap:0; }
-  .trust-stat { padding:0 1rem; }
-  .trust-stat-num { font-size:2.4rem; }
-  .trust-badges-row { flex-direction:column; gap:.75rem; }
+  .trust-stats-row { flex-direction:column; gap:1.5rem; }
+  .trust-stat-divider { width:60px; height:1px; }
+  .trust-stat { padding:0; }
+  .trust-stat-num { font-size:2.8rem; }
+  .trust-badges-row { flex-direction:column; gap:1rem; }
   .trust-badge-sep { display:none; }
 }
 .hero-photo-accent {
@@ -1556,11 +1566,13 @@ footer {
 <div class="angle-up"></div>
 
 <!-- FAQ -->
-<section class="faq-sec">
-  <div class="faq-photo-bg">
-    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="">
-  </div>
-  <div class="sec-inner">
+<section class="faq-sec" id="faq-section">
+  <div class="sec-inner" style="max-width:1100px;margin:0 auto;padding:5.5rem 5vw;">
+    <div class="faq-inner">
+      <div>
+        <div class="sec-eye reveal">Common Questions</div>
+        <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
+        <div class="faq-list">
     <div class="sec-eye reveal">Common Questions</div>
     <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
     <div class="faq-list">
