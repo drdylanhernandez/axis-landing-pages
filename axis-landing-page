@@ -95,7 +95,7 @@ nav {
   position:relative;
   min-height:94vh;
   display:flex; align-items:center;
-  padding:12rem 5vw 4rem;
+  padding:16rem 5vw 4rem;
   overflow:hidden;
 }
 
@@ -408,9 +408,12 @@ section { padding:5.5rem 5vw; }
 
 /* ── LOCATION CARD PHOTO ── */
 .loc-card-photo {
-  margin:.6rem 0 .75rem;
+  float:right;
+  width:120px; height:120px;
+  margin:0 0 .75rem 1rem;
   border-radius:5px; overflow:hidden;
-  height:110px;
+  border:1px solid var(--border);
+  flex-shrink:0;
 }
 .loc-card-photo img {
   width:100%; height:100%; object-fit:cover; object-position:center;
@@ -420,6 +423,7 @@ section { padding:5.5rem 5vw; }
 .loc-card:hover .loc-card-photo img {
   transform:scale(1.04); filter:brightness(1) saturate(1);
 }
+.loc-card::after { content:''; display:table; clear:both; }
 .loc-clinic-photos {
   display:grid; grid-template-columns:1fr 1fr; gap:.75rem;
   margin-bottom:1.1rem;
@@ -656,12 +660,14 @@ footer {
 .hero-logo-center {
   position:absolute;
   top:2.5rem;
-  left:50%;
-  transform:translateX(-50%);
+  left:0; right:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1rem;
   z-index:3;
   pointer-events:none;
   animation:fadeUp .5s ease both;
-  padding-bottom:2rem;
 }
 .hero-logo-center img {
   height:180px;
@@ -669,10 +675,27 @@ footer {
   display:block;
   filter:drop-shadow(0 0 32px rgba(229,190,94,.22));
 }
+.hero-logo-eyebrow {
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:var(--gold-dim); border:1px solid var(--gold-bdr);
+  border-radius:2px; padding:.45rem 1.1rem;
+  pointer-events:all;
+}
+.hero-logo-eyebrow-dot {
+  width:8px; height:8px; background:var(--gold); border-radius:50%;
+  box-shadow:0 0 8px var(--gold); animation:pulse 2s infinite;
+  flex-shrink:0;
+}
+.hero-logo-eyebrow-text {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:1.1rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold);
+}
 
 @media(max-width:640px){
   .hero-logo-center img { height:110px; }
   .hero-logo-center { top:1.5rem; }
+  .hero-logo-eyebrow-text { font-size:.88rem; }
 }
 .hero-photo-accent {
   position:absolute; right:0; bottom:0; top:0;
@@ -769,21 +792,21 @@ footer {
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-photo-accent">
-    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Woman%20getting%20neck%20palpated.png" alt="">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/frontdesksmile.jpg" alt="">
   </div>
 
-  <!-- CENTERED LOGO OVERLAY -->
+  <!-- CENTERED LOGO + EYEBROW OVERLAY -->
   <div class="hero-logo-center">
     <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Transparent.png" alt="Axis Spine and Sport">
+    <div class="hero-logo-eyebrow">
+      <div class="hero-logo-eyebrow-dot"></div>
+      <span class="hero-logo-eyebrow-text">New Patient Special — Gilbert · Tempe · Phoenix</span>
+    </div>
   </div>
 
   <div class="hero-inner">
 
     <div class="hero-copy">
-      <div class="hero-eyebrow">
-        <div class="hero-eyebrow-dot"></div>
-        <span class="hero-eyebrow-text">New Patient Special — Gilbert · Tempe · Phoenix</span>
-      </div>
       <h1 class="hero-hl">
         Stop<br>
         <span class="it gold">Guessing.</span><br>
@@ -869,7 +892,7 @@ footer {
             <p class="svc-desc">Precision adjustments based on your imaging — not a one-size approach.</p>
           </div>
           <div class="svc-thumb">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/X-ray-Phoenix.jpg" alt="Chiropractic adjustment">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/adjustment.jpg" alt="Chiropractic adjustment">
           </div>
         </div>
         <div class="svc-item reveal">
@@ -889,7 +912,7 @@ footer {
             <p class="svc-desc">Percussion, manual therapy, and myofascial release to restore range of motion.</p>
           </div>
           <div class="svc-thumb">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Muscle%20Scraping.webp" alt="Soft tissue therapy">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/scraping.jpg" alt="Soft tissue therapy">
           </div>
         </div>
         <div class="svc-item reveal">
@@ -918,7 +941,7 @@ footer {
         <div class="stat-rule"></div>
         <p class="stat-quote">"We don't just adjust you and send you home. We find <strong>why</strong> you feel the way you do, build a plan around it, and measure your progress every step of the way."</p>
         <div class="stat-photo">
-          <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Woman%20getting%20neck%20palpated.png" alt="Rehab and exercise floor">
+          <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/doctorexam.jpg" alt="Rehab and exercise floor">
         </div>
       </div>
     </div>
@@ -929,7 +952,7 @@ footer {
 <div class="angle-dn"></div>
 <section class="hiw-sec">
   <div class="hiw-photo-bg">
-    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Patient%20lined%20up%20for%20X%20ray.png" alt="">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/18-DSC05771.jpg" alt="">
   </div>
   <div class="sec-inner">
     <div class="sec-eye reveal">What to Expect</div>
@@ -974,7 +997,7 @@ footer {
   <div class="sec-inner">
     <div class="book-split">
       <div class="book-photo reveal">
-        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axis-front-sign-phoenix.jpg" alt="Axis Spine and Sport exterior">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/frontdesksmile.jpg" alt="Axis Spine and Sport exterior">
         <div class="book-photo-overlay">
           <div class="book-photo-tag">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
@@ -1065,34 +1088,34 @@ footer {
       <div>
         <div class="loc-list reveal">
         <div class="loc-card">
+          <div class="loc-card-photo">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisgilbertfront.jpg" alt="Axis Gilbert exterior">
+          </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Gilbert
-          </div>
-          <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisgilbertfront.jpg" alt="Axis Gilbert exterior">
           </div>
           <div class="loc-addr">3341 E Queen Creek Rd, Ste 109<br>Gilbert, AZ</div>
           <a href="https://www.axisspineandsport.com/locations/" target="_blank" class="loc-link">Get Directions →</a>
         </div>
         <div class="loc-card">
+          <div class="loc-card-photo">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axistempefront.jpg" alt="Axis Tempe exterior">
+          </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Tempe
-          </div>
-          <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axistempefront.jpg" alt="Axis Tempe exterior">
           </div>
           <div class="loc-addr">2155 E University Dr, Ste 110<br>Tempe, AZ</div>
           <a href="https://www.axisspineandsport.com/locations/" target="_blank" class="loc-link">Get Directions →</a>
         </div>
         <div class="loc-card">
+          <div class="loc-card-photo">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisphoenixfront.jpg" alt="Axis Phoenix exterior">
+          </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Phoenix
-          </div>
-          <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisphoenixfront.jpg" alt="Axis Phoenix exterior">
           </div>
           <div class="loc-addr">4515 N 16th St, Ste 106<br>Phoenix, AZ</div>
           <a href="https://www.axisspineandsport.com/locations/" target="_blank" class="loc-link">Get Directions →</a>
