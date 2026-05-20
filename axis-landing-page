@@ -970,12 +970,13 @@ footer {
   grid-template-columns:1fr auto 1fr auto 1fr;
   align-items:center;
   justify-items:center;
-  max-width:900px;
+  max-width:1000px;
   margin:0 auto 2rem;
+  column-gap:0;
 }
 
 .trust-stat {
-  padding:0 1rem;
+  padding:0 4rem;
   text-align:center;
   width:100%;
 }
