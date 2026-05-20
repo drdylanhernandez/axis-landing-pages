@@ -722,7 +722,7 @@ footer {
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="/mnt/user-data/uploads/Transparent_.png" alt="Axis Spine and Sport">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Transparent.png" alt="Axis Spine and Sport">
   </a>
   <ul class="nav-links">
     <li><a href="https://www.axisspineandsport.com/#services" target="_blank">Services</a></li>
@@ -737,7 +737,7 @@ footer {
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-photo-accent">
-    <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_48_10_AM.png" alt="">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Woman%20getting%20neck%20palpated.png" alt="">
   </div>
   <div class="hero-inner">
 
@@ -762,7 +762,7 @@ footer {
     <!-- PRICE CARD -->
     <div class="price-card">
       <div class="price-triangles">
-        <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" alt="Axis triangles">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" alt="Axis triangles">
       </div>
       <div class="price-lbl">New Patient Special</div>
       <div class="price-amt"><sup>$</sup>59</div>
@@ -785,7 +785,7 @@ footer {
 <div class="angle-dn"></div>
 <section class="prob-sec">
   <div class="prob-photo-bg">
-    <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_58_28_AM.png" alt="">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Woman%20with%20back%20pain%202.png" alt="">
   </div>
   <div class="sec-inner">
     <div class="sec-eye reveal">Sound familiar?</div>
@@ -831,7 +831,7 @@ footer {
             <p class="svc-desc">Precision adjustments based on your imaging — not a one-size approach.</p>
           </div>
           <div class="svc-thumb">
-            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_56_16_AM.png" alt="Chiropractic adjustment">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/adjustment-bay-phoenix" alt="Chiropractic adjustment">
           </div>
         </div>
         <div class="svc-item reveal">
@@ -841,7 +841,7 @@ footer {
             <p class="svc-desc">Protocols that reinforce your adjustments so changes hold between visits.</p>
           </div>
           <div class="svc-thumb">
-            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_51_00_AM.png" alt="Corrective exercise">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/PT-rehab-Phoenix" alt="Corrective exercise">
           </div>
         </div>
         <div class="svc-item reveal">
@@ -851,7 +851,7 @@ footer {
             <p class="svc-desc">Percussion, manual therapy, and myofascial release to restore range of motion.</p>
           </div>
           <div class="svc-thumb">
-            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_53_18_AM.png" alt="Soft tissue therapy">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Muscle%20Scraping.webp" alt="Soft tissue therapy">
           </div>
         </div>
         <div class="svc-item reveal">
@@ -861,13 +861,13 @@ footer {
             <p class="svc-desc">Whether athlete or desk worker — we apply sports medicine principles to every case.</p>
           </div>
           <div class="svc-thumb">
-            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_58_08_AM.png" alt="Sports medicine treatment">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Normatec%20Compression%20Therapy.jpeg" alt="Sports medicine treatment">
           </div>
         </div>
       </div>
 
       <div class="stat-box reveal">
-        <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="gold-tri-accent" alt="">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="gold-tri-accent" alt="">
         <div>
           <div class="stat-num">&lt;30</div>
           <div class="stat-lbl">Days to measurable results on a full corrective plan</div>
@@ -880,7 +880,7 @@ footer {
         <div class="stat-rule"></div>
         <p class="stat-quote">"We don't just adjust you and send you home. We find <strong>why</strong> you feel the way you do, build a plan around it, and measure your progress every step of the way."</p>
         <div class="stat-photo">
-          <img src="/mnt/user-data/uploads/15-DSC05751.jpg" alt="Rehab and exercise floor">
+          <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Rehab-Phoenix-2" alt="Rehab and exercise floor">
         </div>
       </div>
     </div>
@@ -891,7 +891,7 @@ footer {
 <div class="angle-dn"></div>
 <section class="hiw-sec">
   <div class="hiw-photo-bg">
-    <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_50_00_AM.png" alt="">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Patient%20lined%20up%20for%20X%20ray.png" alt="">
   </div>
   <div class="sec-inner">
     <div class="sec-eye reveal">What to Expect</div>
@@ -936,10 +936,10 @@ footer {
   <div class="sec-inner">
     <div class="book-split">
       <div class="book-photo reveal">
-        <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_53_43_AM.png" alt="Axis Spine and Sport exterior">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axis-front-sign-phoenix" alt="Axis Spine and Sport exterior">
         <div class="book-photo-overlay">
           <div class="book-photo-tag">
-            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
             <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);">Gilbert · Tempe · Phoenix</div>
             <div style="font-size:.9rem;color:rgba(240,236,228,.7);margin-top:.3rem;">Same-week appointments available</div>
           </div>
@@ -1022,21 +1022,21 @@ footer {
     <h2 class="sec-hl reveal">We're in<br><span class="it">your neighborhood.</span></h2>
     <div class="loc-grid">
       <div class="loc-map-wrap reveal">
-        <img src="/mnt/user-data/uploads/3_Locations_Map.PNG" alt="Axis Spine and Sport location map — Phoenix metro area">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3%20Locations%20Map.PNG" alt="Axis Spine and Sport location map — Phoenix metro area">
       </div>
       <div>
         <div class="loc-clinic-photos reveal">
           <div class="loc-clinic-photo">
-            <img src="/mnt/user-data/uploads/04-DSC05646.jpg" alt="Axis clinic interior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/X-ray-Phoenix.jpg" alt="Axis clinic interior">
           </div>
           <div class="loc-clinic-photo">
-            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_46_09_AM.png" alt="Doctor consulting with patient">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Patient%20lined%20up%20for%20X%20ray.png" alt="Doctor consulting with patient">
           </div>
         </div>
         <div class="loc-list reveal">
         <div class="loc-card">
           <div class="loc-name">
-            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Gilbert
           </div>
           <div class="loc-addr">3341 E Queen Creek Rd, Ste 109<br>Gilbert, AZ</div>
@@ -1044,7 +1044,7 @@ footer {
         </div>
         <div class="loc-card">
           <div class="loc-name">
-            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Tempe
           </div>
           <div class="loc-addr">2155 E University Dr, Ste 110<br>Tempe, AZ</div>
@@ -1052,7 +1052,7 @@ footer {
         </div>
         <div class="loc-card">
           <div class="loc-name">
-            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Phoenix
           </div>
           <div class="loc-addr">4515 N 16th St, Ste 106<br>Phoenix, AZ</div>
@@ -1116,7 +1116,7 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">
-    <img src="/mnt/user-data/uploads/Transparent_.png" alt="Axis Spine and Sport">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Transparent.png" alt="Axis Spine and Sport">
   </div>
   <ul class="footer-links">
     <li><a href="https://www.axisspineandsport.com/locations-schedule/" target="_blank">Schedule</a></li>
