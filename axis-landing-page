@@ -199,7 +199,7 @@ nav {
   display:flex; gap:.4rem; margin-bottom:1.2rem; align-items:center;
 }
 .price-triangles img { height:60px; width:auto; }
-.gold-tri-accent { height:40px; width:auto; margin-bottom:1rem; }
+.gold-tri-accent { height:50px; width:auto; margin-bottom:1rem; display:block; }
 .loc-tri { height:14px; width:auto; }
 
 .price-lbl {
@@ -947,6 +947,7 @@ footer {
       </div>
 
       <div class="stat-box reveal">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3%20Gold%20Triangles%20Enhanced.png" class="gold-tri-accent" alt="">
         <div>
           <div class="stat-num">&lt;30</div>
           <div class="stat-lbl">Days to measurable results on a full corrective plan</div>
