@@ -3,10 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>$59 New Patient Special — Axis Spine & Sport</title>
-<meta name="description" content="Get your full consultation, exam, X-rays, percussion massage, and first chiropractic adjustment for only $59. Limited availability.">
+
+<!-- Primary SEO -->
+<title>$59 New Patient Special — Axis Spine & Sport | Gilbert · Tempe · Phoenix</title>
+<meta name="description" content="Get a full consultation, exam, X-rays, percussion massage, and your first chiropractic adjustment for only $59. Corrective care plans with guaranteed results in under 30 days. Gilbert, Tempe & Phoenix, AZ.">
+<meta name="keywords" content="chiropractor Gilbert AZ, chiropractor Tempe AZ, chiropractor Phoenix AZ, new patient special, chiropractic adjustment, corrective care, sports medicine, spinal decompression, back pain relief Arizona">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://drdylanhernandez.github.io/axis-landing-pages/axis-landing-page">
+
+<!-- Open Graph / Facebook / Instagram -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://drdylanhernandez.github.io/axis-landing-pages/axis-landing-page">
+<meta property="og:title" content="$59 New Patient Special — Axis Spine & Sport">
+<meta property="og:description" content="Stop guessing. Start fixing. Full exam, X-rays, percussion massage & first adjustment for $59. Gilbert · Tempe · Phoenix, AZ.">
+<meta property="og:image" content="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/frontdesksmile.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Axis Spine and Sport">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$59 New Patient Special — Axis Spine & Sport">
+<meta name="twitter:description" content="Stop guessing. Start fixing. Full exam, X-rays, percussion massage & first adjustment for $59. Gilbert · Tempe · Phoenix, AZ.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/frontdesksmile.jpg">
+
+<!-- Geo targeting -->
+<meta name="geo.region" content="US-AZ">
+<meta name="geo.placename" content="Gilbert, Tempe, Phoenix, Arizona">
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.axisspineandsport.com",
+      "name": "Axis Spine and Sport",
+      "description": "Chiropractic care, corrective exercise, soft tissue therapy, and sports medicine under one roof. Serving Gilbert, Tempe, and Phoenix, Arizona.",
+      "url": "https://www.axisspineandsport.com",
+      "telephone": "+14808425020",
+      "priceRange": "$$",
+      "image": "https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Transparent.png",
+      "medicalSpecialty": "Chiropractic",
+      "location": [
+        {
+          "@type": "MedicalClinic",
+          "name": "Axis Spine and Sport — Gilbert",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3341 E Queen Creek Rd, Ste 109",
+            "addressLocality": "Gilbert",
+            "addressRegion": "AZ",
+            "postalCode": "85297",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "MedicalClinic",
+          "name": "Axis Spine and Sport — Tempe",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2155 E University Dr, Ste 110",
+            "addressLocality": "Tempe",
+            "addressRegion": "AZ",
+            "postalCode": "85281",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "MedicalClinic",
+          "name": "Axis Spine and Sport — Phoenix",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4515 N 16th St, Ste 106",
+            "addressLocality": "Phoenix",
+            "addressRegion": "AZ",
+            "postalCode": "85016",
+            "addressCountry": "US"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "2000",
+        "bestRating": "5"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "New Patient Special",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "$59 New Patient Special",
+            "description": "Full consultation, exam, X-rays, percussion massage, and first chiropractic adjustment",
+            "price": "59",
+            "priceCurrency": "USD",
+            "eligibleCustomerType": "NewCustomer",
+            "availability": "https://schema.org/LimitedAvailability"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "$59 New Patient Special — Axis Spine & Sport",
+      "description": "Claim your $59 new patient special at Axis Spine and Sport. Includes full exam, X-rays, percussion massage, and first adjustment.",
+      "url": "https://drdylanhernandez.github.io/axis-landing-pages/axis-landing-page",
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg:       #0a0b0d;
@@ -198,8 +311,8 @@ nav {
 .price-triangles {
   display:flex; gap:.4rem; margin-bottom:1.2rem; align-items:center;
 }
-.price-triangles img { height:60px; width:auto; }
-.gold-tri-accent { height:50px; width:auto; margin-bottom:1rem; display:block; }
+.price-triangles img { height:78px; width:auto; }
+.gold-tri-accent { height:65px; width:auto; margin-bottom:1rem; display:block; }
 .loc-tri { height:14px; width:auto; }
 
 .price-lbl {
@@ -444,14 +557,35 @@ section { padding:5.5rem 5vw; }
 }
 /* ── VIDEO SECTION ── */
 .video-sec { background:var(--bg); padding:5.5rem 5vw; }
-.video-wrap {
-  position:relative; width:100%; max-width:800px; margin:0 auto;
-  border-radius:10px; overflow:hidden; border:1px solid var(--border);
-  box-shadow:0 0 60px rgba(229,190,94,.1); aspect-ratio:16/9;
+.video-cards {
+  display:grid; grid-template-columns:1fr; gap:1.5rem;
+  max-width:640px; margin:0 auto;
 }
-.video-wrap iframe {
-  position:absolute; top:0; left:0; width:100%; height:100%; display:block;
+.video-card {
+  text-decoration:none; background:var(--surface); border:1px solid var(--border);
+  border-radius:8px; overflow:hidden; transition:border-color .2s, transform .2s; display:block;
 }
+.video-card:hover { border-color:var(--gold-bdr); transform:translateY(-3px); }
+.video-thumb { position:relative; aspect-ratio:16/9; overflow:hidden; }
+.video-thumb img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
+.video-card:hover .video-thumb img { transform:scale(1.03); }
+.video-play {
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  background:rgba(0,0,0,.35); transition:background .2s;
+}
+.video-play svg { filter:drop-shadow(0 2px 8px rgba(0,0,0,.5)); opacity:.9; }
+.video-card:hover .video-play { background:rgba(0,0,0,.2); }
+.video-info { padding:1.25rem 1.4rem; }
+.video-tag {
+  font-family:"Barlow Condensed",sans-serif; font-size:.72rem; font-weight:700;
+  letter-spacing:.15em; text-transform:uppercase; color:var(--gold); margin-bottom:.4rem;
+}
+.video-title {
+  font-family:"Barlow Condensed",sans-serif; font-weight:700; font-size:1.1rem;
+  text-transform:uppercase; letter-spacing:.04em; color:var(--white); margin-bottom:.3rem;
+}
+.video-sub { font-size:.85rem; color:var(--muted); }
+@media(max-width:580px){ .video-cards { grid-template-columns:1fr; } }
 
 /* ── BOOK SPLIT ── */
 .book-sec { background:var(--bg); padding:5.5rem 5vw; }
@@ -713,10 +847,93 @@ footer {
   color:var(--gold);
 }
 
+/* ── TRUST SECTION ── */
+.trust-section {
+  background:#0c0e11;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:3.5rem 5vw 2.5rem;
+  text-align:center;
+}
+
+.trust-stats-row {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  margin-bottom:2rem;
+}
+
+.trust-stat {
+  flex:1;
+  max-width:280px;
+  padding:0 2rem;
+}
+
+.trust-stat-num {
+  font-family:'Montserrat', sans-serif;
+  font-weight:900;
+  font-size:clamp(3rem, 6vw, 5rem);
+  line-height:1;
+  color:var(--white);
+  letter-spacing:-.02em;
+  margin-bottom:.5rem;
+}
+
+.trust-stat-label {
+  font-family:'Barlow Condensed', sans-serif;
+  font-weight:600;
+  font-size:.88rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.trust-stat-divider {
+  width:1px;
+  height:60px;
+  background:var(--border);
+  flex-shrink:0;
+}
+
+.trust-badges-row {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1.5rem;
+  padding-top:1.75rem;
+  border-top:1px solid var(--border);
+}
+
+.trust-badge {
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+}
+
+.trust-badge-icon { font-size:1rem; }
+
+.trust-badge-text {
+  font-family:'Barlow Condensed', sans-serif;
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+.trust-badge-sep {
+  color:var(--border);
+  font-size:1.5rem;
+  line-height:1;
+}
+
 @media(max-width:640px){
-  .hero-logo-center img { height:110px; }
-  .hero-logo-center { top:1.5rem; }
-  .hero-logo-eyebrow-text { font-size:.88rem; }
+  .trust-stats-row { gap:0; }
+  .trust-stat { padding:0 1rem; }
+  .trust-stat-num { font-size:2.4rem; }
+  .trust-badges-row { flex-direction:column; gap:.75rem; }
+  .trust-badge-sep { display:none; }
 }
 .hero-photo-accent {
   position:absolute; right:0; bottom:0; top:0;
@@ -858,6 +1075,37 @@ footer {
       <p class="price-note">New patients only · All Arizona locations</p>
     </div>
 
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-section">
+  <div class="trust-stats-row">
+    <div class="trust-stat">
+      <div class="trust-stat-num">3</div>
+      <div class="trust-stat-label">Valley Offices</div>
+    </div>
+    <div class="trust-stat-divider"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">2,000+</div>
+      <div class="trust-stat-label">5-Star Reviews</div>
+    </div>
+    <div class="trust-stat-divider"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">50,000+</div>
+      <div class="trust-stat-label">Adjustments Given</div>
+    </div>
+  </div>
+  <div class="trust-badges-row">
+    <div class="trust-badge">
+      <span class="trust-badge-icon">🏆</span>
+      <span class="trust-badge-text">Phoenix Magazine Top Doctor</span>
+    </div>
+    <div class="trust-badge-sep">·</div>
+    <div class="trust-badge">
+      <span class="trust-badge-icon">🔱</span>
+      <span class="trust-badge-text">Arizona State University Athletics Partner</span>
+    </div>
   </div>
 </section>
 
@@ -1019,16 +1267,20 @@ footer {
     <div class="sec-eye reveal">See It For Yourself</div>
     <h2 class="sec-hl reveal">What to expect at<br><span class="it">your first visit.</span></h2>
     <p style="color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:560px;margin:0 auto 2.5rem;" class="reveal">A real look at what happens when you walk through our doors — from check-in to your corrective plan.</p>
-    <div class="video-wrap reveal">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/JArKBU1mvrk?rel=0&modestbranding=1&color=white"
-        title="What to Expect at Your First Visit — Axis Spine and Sport"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+    <div class="video-cards reveal">
+      <a href="https://youtu.be/JArKBU1mvrk" target="_blank" class="video-card">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/JArKBU1mvrk/maxresdefault.jpg" alt="Axis Spine and Sport New Patient">
+          <div class="video-play"><svg viewBox="0 0 24 24" fill="white" width="48" height="48"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">New Patient Visit</div>
+          <div class="video-title">Axis Spine and Sport New Patient</div>
+          <div class="video-sub">1:05 · Watch on YouTube →</div>
+        </div>
+      </a>
     </div>
-    <div style="margin-top:2rem;" class="reveal">
+    <div style="margin-top:2.5rem;" class="reveal">
       <a href="#book" class="btn-gold">Claim Your $59 New Patient Special →</a>
     </div>
   </div>
