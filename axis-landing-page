@@ -95,7 +95,7 @@ nav {
   position:relative;
   min-height:94vh;
   display:flex; align-items:center;
-  padding:16rem 5vw 4rem;
+  padding:20rem 5vw 4rem;
   overflow:hidden;
 }
 
@@ -198,12 +198,8 @@ nav {
 .price-triangles {
   display:flex; gap:.4rem; margin-bottom:1.2rem; align-items:center;
 }
-.price-triangles svg { width:18px; height:15px; }
-.gold-tri-accent {
-  display:flex; gap:3px; margin-bottom:1rem; align-items:center;
-}
-.gold-tri-accent svg { width:18px; height:15px; }
-.loc-tri-svg svg { width:14px; height:12px; display:inline-block; }
+.price-triangles img { height:60px; width:auto; }
+.gold-tri-accent { height:40px; width:auto; margin-bottom:1rem; }
 .loc-tri { height:14px; width:auto; }
 
 .price-lbl {
@@ -595,7 +591,7 @@ section { padding:5.5rem 5vw; }
 }
 .faq-photo-bg img {
   width:100%; height:100%; object-fit:cover; object-position:center;
-  filter:brightness(.1) saturate(.4);
+  filter:brightness(.18) saturate(.5);
 }
 .faq-sec .sec-inner { position:relative; z-index:1; }
 .faq-list { margin-top:2.5rem; max-width:700px; display:flex; flex-direction:column; gap:.7rem; }
@@ -688,7 +684,7 @@ footer {
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:1rem;
+  gap:1.5rem;
   z-index:3;
   pointer-events:none;
   animation:fadeUp .5s ease both;
@@ -951,7 +947,6 @@ footer {
       </div>
 
       <div class="stat-box reveal">
-        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="gold-tri-accent" alt="">
         <div>
           <div class="stat-num">&lt;30</div>
           <div class="stat-lbl">Days to measurable results on a full corrective plan</div>
@@ -1176,7 +1171,7 @@ footer {
 <!-- FAQ -->
 <section class="faq-sec">
   <div class="faq-photo-bg">
-    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/adjustment-bay-phoenix.jpg" alt="">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="">
   </div>
   <div class="sec-inner">
     <div class="sec-eye reveal">Common Questions</div>
