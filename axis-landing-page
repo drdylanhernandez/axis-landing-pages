@@ -833,7 +833,7 @@ footer {
     <!-- PRICE CARD -->
     <div class="price-card">
       <div class="price-triangles">
-        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="Axis triangles">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" alt="Axis triangles">
       </div>
       <div class="price-lbl">New Patient Special</div>
       <div class="price-amt"><sup>$</sup>59</div>
@@ -1033,7 +1033,7 @@ footer {
         <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/frontdesksmile.jpg" alt="Axis Spine and Sport exterior">
         <div class="book-photo-overlay">
           <div class="book-photo-tag">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
             <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);">Gilbert · Tempe · Phoenix</div>
             <div style="font-size:.9rem;color:rgba(240,236,228,.7);margin-top:.3rem;">Same-week appointments available</div>
           </div>
@@ -1125,7 +1125,7 @@ footer {
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisgilbertfront.jpg" alt="Axis Gilbert exterior">
           </div>
           <div class="loc-name">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Gilbert
           </div>
           <div class="loc-addr">3341 E Queen Creek Rd, Ste 109<br>Gilbert, AZ</div>
@@ -1136,7 +1136,7 @@ footer {
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Exterior.jpg" alt="Axis Tempe exterior">
           </div>
           <div class="loc-name">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Tempe
           </div>
           <div class="loc-addr">2155 E University Dr, Ste 110<br>Tempe, AZ</div>
@@ -1147,7 +1147,7 @@ footer {
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/57-DSC05896.jpg" alt="Axis Phoenix exterior">
           </div>
           <div class="loc-name">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
             Phoenix
           </div>
           <div class="loc-addr">4515 N 16th St, Ste 106<br>Phoenix, AZ</div>
