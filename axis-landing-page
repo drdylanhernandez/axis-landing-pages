@@ -349,7 +349,7 @@ section { padding:5.5rem 5vw; }
   border:1px solid var(--border);
 }
 .stat-photo img {
-  width:100%; height:200px; object-fit:cover; object-position:center top;
+  width:100%; height:260px; object-fit:cover; object-position:center 20%;
   display:block; filter:brightness(.9) saturate(.9);
 }
 
@@ -1087,7 +1087,7 @@ footer {
         <div class="loc-list reveal">
         <div class="loc-card">
           <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Front2.jpg" alt="Axis Gilbert exterior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisgilbertfront.jpg" alt="Axis Gilbert exterior">
           </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
@@ -1098,7 +1098,7 @@ footer {
         </div>
         <div class="loc-card">
           <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/exterior.jpg" alt="Axis Tempe exterior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Exterior.jpg" alt="Axis Tempe exterior">
           </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
