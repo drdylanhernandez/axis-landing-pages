@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$59 New Patient Special — Axis Spine & Sport</title>
+<meta name="description" content="Get your full consultation, exam, X-rays, percussion massage, and first chiropractic adjustment for only $59. Limited availability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #0a0b0d;
+  --bg2:      #0f1115;
+  --surface:  #141619;
+  --border:   #1f2228;
+  --gold:     #e5be5e;
+  --gold-dim: rgba(229,190,94,0.10);
+  --gold-bdr: rgba(229,190,94,0.22);
+  --silver:   #c8cdd6;
+  --warm:     #f0ece4;
+  --white:    #ffffff;
+  --muted:    #717a8a;
+  --dark-txt: #0a0b0d;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--warm);
+  font-family: 'Barlow', sans-serif;
+  overflow-x: hidden;
+}
+
+/* noise overlay */
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events:none; z-index:999; opacity:.45;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--gold);
+  color: var(--dark-txt);
+  text-align:center;
+  padding:.65rem 1rem;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:1rem;
+  letter-spacing:.14em; text-transform:uppercase;
+}
+
+/* ── NAV ── */
+nav {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:1rem 5vw;
+  border-bottom:1px solid var(--border);
+  position:sticky; top:0;
+  background:rgba(10,11,13,.96);
+  backdrop-filter:blur(14px);
+  z-index:100;
+}
+
+.nav-logo img { height:52px; width:auto; display:block; }
+
+.nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
+.nav-links a {
+  color:var(--muted); text-decoration:none;
+  font-size:1rem; font-weight:500; letter-spacing:.04em;
+  transition:color .2s;
+}
+.nav-links a:hover { color:var(--warm); }
+
+.nav-cta {
+  background:var(--gold) !important;
+  color:var(--dark-txt) !important;
+  padding:.6rem 1.5rem;
+  border-radius:3px;
+  font-family:'Barlow Condensed',sans-serif !important;
+  font-weight:900 !important;
+  letter-spacing:.1em !important;
+  text-transform:uppercase;
+  font-size:1rem !important;
+  transition:filter .2s !important;
+  white-space:nowrap;
+}
+.nav-cta:hover { filter:brightness(1.12); }
+
+@media(max-width:640px){ .nav-links { display:none; } }
+
+/* ── HERO ── */
+.hero {
+  position:relative;
+  min-height:94vh;
+  display:flex; align-items:center;
+  padding:5rem 5vw 4rem;
+  overflow:hidden;
+}
+
+.hero-grid-bg {
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(229,190,94,.035) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(229,190,94,.035) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 100%);
+}
+
+.hero-glow {
+  position:absolute; top:-15%; right:-8%;
+  width:680px; height:680px;
+  background:radial-gradient(circle,rgba(229,190,94,.07) 0%,transparent 65%);
+  pointer-events:none;
+}
+
+.hero-inner {
+  position:relative; z-index:2;
+  max-width:1140px; width:100%; margin:0 auto;
+  display:grid; grid-template-columns:1fr 390px; gap:4rem; align-items:center;
+}
+
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:var(--gold-dim); border:1px solid var(--gold-bdr);
+  border-radius:2px; padding:.45rem 1.1rem;
+  margin-bottom:1.4rem;
+  animation:fadeUp .6s ease both;
+}
+.hero-eyebrow-dot {
+  width:8px; height:8px; background:var(--gold); border-radius:50%;
+  box-shadow:0 0 8px var(--gold); animation:pulse 2s infinite;
+}
+.hero-eyebrow-text {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:1.1rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold);
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+
+.hero-hl {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900;
+  font-size:clamp(3.6rem,7.5vw,6.8rem);
+  line-height:.9; text-transform:uppercase; letter-spacing:-.01em;
+  color:var(--white); margin-bottom:1.4rem;
+  animation:fadeUp .7s .1s ease both;
+}
+.hero-hl .gold  { color:var(--gold); }
+.hero-hl .it    { font-style:italic; font-weight:700; }
+.hero-hl .silver{ color:var(--silver); }
+
+.hero-sub {
+  font-size:1.12rem; line-height:1.72;
+  color:rgba(240,236,228,.68);
+  max-width:500px; margin-bottom:2.5rem;
+  animation:fadeUp .7s .2s ease both;
+}
+
+.hero-btns {
+  display:flex; align-items:center; gap:1rem; flex-wrap:wrap;
+  animation:fadeUp .7s .3s ease both;
+}
+
+.btn-gold {
+  background:var(--gold); color:var(--dark-txt);
+  padding:1rem 2.2rem;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1rem; letter-spacing:.12em; text-transform:uppercase;
+  border:none; border-radius:3px; cursor:pointer; text-decoration:none;
+  display:inline-block; transition:all .2s;
+  box-shadow:0 0 28px rgba(229,190,94,.22);
+}
+.btn-gold:hover { filter:brightness(1.1); box-shadow:0 0 48px rgba(229,190,94,.38); transform:translateY(-1px); }
+
+.btn-ghost {
+  color:var(--warm); padding:1rem 1.5rem;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:.9rem; letter-spacing:.1em; text-transform:uppercase;
+  text-decoration:none; border:1px solid var(--border); border-radius:3px;
+  transition:all .2s;
+}
+.btn-ghost:hover { border-color:var(--gold-bdr); color:var(--gold); }
+
+/* ── PRICE CARD ── */
+.price-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:8px; padding:2rem;
+  position:relative; overflow:hidden;
+  animation:fadeUp .8s .4s ease both;
+}
+.price-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+
+.price-triangles {
+  display:flex; gap:.4rem; margin-bottom:1.2rem;
+}
+.price-triangles img { height:32px; width:auto; }
+
+.price-lbl {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:1.1rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:.75rem;
+}
+.price-amt {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:5rem; line-height:1; color:var(--white); margin-bottom:.2rem;
+}
+.price-amt sup { font-size:2.4rem; vertical-align:super; }
+.price-was { font-size:.78rem; color:var(--muted); text-decoration:line-through; margin-bottom:1.5rem; }
+
+.price-list { list-style:none; display:flex; flex-direction:column; gap:.6rem; margin-bottom:1.5rem; }
+.price-list li {
+  display:flex; align-items:flex-start; gap:.6rem;
+  font-size:1.05rem; color:rgba(240,236,228,.85); line-height:1.4;
+}
+.chk { color:var(--gold); flex-shrink:0; margin-top:.05rem; }
+
+.price-cta-btn {
+  width:100%; display:block; text-align:center;
+  background:var(--gold); color:var(--dark-txt);
+  padding:1rem;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1rem; letter-spacing:.12em; text-transform:uppercase;
+  border-radius:3px; text-decoration:none; transition:all .2s;
+  box-shadow:0 0 18px rgba(229,190,94,.15);
+}
+.price-cta-btn:hover { filter:brightness(1.1); box-shadow:0 0 36px rgba(229,190,94,.3); }
+.price-note { text-align:center; font-size:.85rem; color:var(--muted); margin-top:.7rem; }
+
+@media(max-width:900px){
+  .hero-inner { grid-template-columns:1fr; gap:2.5rem; }
+  .price-card { max-width:400px; }
+}
+
+/* ── SECTIONS ── */
+section { padding:5.5rem 5vw; }
+.sec-inner { max-width:1140px; margin:0 auto; }
+
+.angle-dn {
+  height:72px; background:var(--bg2);
+  clip-path:polygon(0 0,100% 36px,100% 100%,0 100%);
+  margin-top:-1px;
+}
+.angle-up {
+  height:72px; background:var(--bg);
+  clip-path:polygon(0 36px,100% 0,100% 100%,0 100%);
+  margin-top:-1px;
+}
+
+.sec-eye {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:1.1rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:.75rem;
+}
+.sec-hl {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900;
+  font-size:clamp(2rem,4vw,3.2rem);
+  text-transform:uppercase; line-height:.95; color:var(--white);
+  margin-bottom:1.25rem;
+}
+.sec-hl .it { font-style:italic; color:var(--gold); }
+.sec-hl .sv { color:var(--silver); }
+
+/* ── PROBLEM ── */
+.prob-sec { background:var(--bg2); position:relative; overflow:hidden; }
+.prob-photo-bg {
+  position:absolute; inset:0; z-index:0;
+}
+.prob-photo-bg img {
+  width:100%; height:100%; object-fit:cover; object-position:center 30%;
+  filter:brightness(.12) saturate(.4);
+}
+.prob-sec .sec-inner { position:relative; z-index:1; }
+
+.prob-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.25rem;
+  margin-top:2.5rem;
+}
+.prob-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:6px; padding:1.4rem; transition:border-color .2s;
+}
+.prob-card:hover { border-color:var(--gold-bdr); }
+.prob-icon { font-size:1.5rem; margin-bottom:.65rem; }
+.prob-title {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:1.15rem; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--white); margin-bottom:.4rem;
+}
+.prob-desc { font-size:1.05rem; line-height:1.68; color:var(--muted); }
+
+/* ── SOLUTION ── */
+.sol-sec { background:var(--bg); }
+.sol-grid { display:grid; grid-template-columns:1fr 1fr; gap:3.5rem; align-items:center; margin-top:2.5rem; }
+
+.svc-list { display:flex; flex-direction:column; gap:.9rem; }
+.svc-item {
+  display:flex; align-items:flex-start; gap:.9rem;
+  padding:1.1rem 1.25rem;
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:6px; transition:border-color .2s,transform .2s;
+}
+.svc-item:hover { border-color:var(--gold-bdr); transform:translateX(4px); }
+.svc-icon {
+  width:36px; height:36px; flex-shrink:0;
+  background:var(--gold-dim); border:1px solid var(--gold-bdr);
+  border-radius:4px; display:flex; align-items:center; justify-content:center;
+  font-size:1rem;
+}
+.svc-name {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:1.1rem; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--white); margin-bottom:.2rem;
+}
+.svc-desc { font-size:1.05rem; color:var(--muted); line-height:1.6; }
+
+.stat-box {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:8px; padding:2.2rem; position:relative; overflow:hidden;
+}
+.stat-box::after {
+  content:''; position:absolute; bottom:-40px; right:-40px;
+  width:200px; height:200px;
+  background:radial-gradient(circle,rgba(229,190,94,.06),transparent 70%);
+}
+.stat-num {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:4.2rem; line-height:1; color:var(--gold);
+}
+.stat-lbl { font-size:1.05rem; color:var(--muted); margin-top:.25rem; line-height:1.45; }
+.stat-rule { height:1px; background:var(--border); margin:1.5rem 0; }
+.stat-quote {
+  font-size:1.1rem; line-height:1.68; color:rgba(240,236,228,.78); font-style:italic;
+}
+.stat-quote strong { color:var(--white); font-style:normal; }
+
+.gold-tri-accent {
+  width:28px; margin-bottom:1rem; opacity:.8;
+}
+
+.stat-photo {
+  margin-top:1.5rem;
+  border-radius:6px; overflow:hidden;
+  border:1px solid var(--border);
+}
+.stat-photo img {
+  width:100%; height:200px; object-fit:cover; object-position:center top;
+  display:block; filter:brightness(.9) saturate(.9);
+}
+
+/* ── HOW IT WORKS ── */
+.hiw-sec {
+  background:var(--bg2); text-align:center;
+  position:relative; overflow:hidden;
+}
+.hiw-photo-bg {
+  position:absolute; inset:0; z-index:0;
+}
+.hiw-photo-bg img {
+  width:100%; height:100%; object-fit:cover; object-position:center;
+  filter:brightness(.15) saturate(.4);
+}
+.hiw-sec .sec-inner { position:relative; z-index:1; }
+.steps-row {
+  display:flex; justify-content:center; gap:0;
+  margin-top:3.5rem; position:relative;
+}
+.steps-row-1 { margin-bottom:3rem; }
+.steps-row-1::before {
+  content:''; position:absolute; top:26px; left:14%; right:14%; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-bdr),var(--gold-bdr),transparent);
+}
+.steps-row-2::before {
+  content:''; position:absolute; top:26px; left:20%; right:20%; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-bdr),var(--gold-bdr),transparent);
+}
+.step { padding:0 1.2rem; z-index:1; width:220px; flex-shrink:0; }
+.step-n {
+  width:52px; height:52px; margin:0 auto 1.1rem;
+  background:var(--surface); border:1px solid var(--gold-bdr);
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:1.25rem;
+  color:var(--gold);
+}
+.step-t {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:1.1rem; text-transform:uppercase; letter-spacing:.06em;
+  color:var(--white); margin-bottom:.45rem;
+}
+.step-d { font-size:1rem; color:var(--muted); line-height:1.6; }
+
+/* ── SERVICE ITEM PHOTO THUMB ── */
+.svc-thumb {
+  width:70px; height:70px; flex-shrink:0;
+  border-radius:6px; overflow:hidden;
+  border:1px solid var(--border);
+  margin-left:.75rem;
+}
+.svc-thumb img {
+  width:100%; height:100%; object-fit:cover;
+  filter:brightness(.85) saturate(.85);
+}
+
+/* ── LOCATION CLINIC PHOTOS ── */
+.loc-clinic-photos {
+  display:grid; grid-template-columns:1fr 1fr; gap:.75rem;
+  margin-bottom:1.1rem;
+}
+.loc-clinic-photo {
+  border-radius:6px; overflow:hidden;
+  border:1px solid var(--border); height:130px;
+}
+.loc-clinic-photo img {
+  width:100%; height:100%; object-fit:cover; object-position:center;
+  filter:brightness(.85) saturate(.85);
+  transition:transform .4s ease, filter .3s;
+}
+.loc-clinic-photo:hover img {
+  transform:scale(1.04); filter:brightness(1) saturate(1);
+}
+.book-sec { background:var(--bg); padding:5.5rem 5vw; }
+.book-split {
+  display:grid; grid-template-columns:1fr 520px; gap:0;
+  align-items:stretch; background:var(--surface);
+  border:1px solid var(--border); border-radius:12px;
+  overflow:hidden; max-width:1100px; margin:0 auto;
+}
+.book-photo { position:relative; overflow:hidden; min-height:500px; }
+.book-photo img {
+  width:100%; height:100%; object-fit:cover; object-position:center;
+  display:block; filter:brightness(.6) saturate(.85); transition:transform .6s ease;
+}
+.book-split:hover .book-photo img { transform:scale(1.02); }
+.book-photo-overlay {
+  position:absolute; inset:0; display:flex; align-items:flex-end; padding:2rem;
+  background:linear-gradient(to top, rgba(0,0,0,.65) 0%, transparent 60%);
+}
+.book-photo-tag { display:flex; flex-direction:column; }
+.book-form-col { padding:2.5rem; display:flex; flex-direction:column; }
+.book-form-col .sec-eye { margin-bottom:.5rem; }
+.book-form-col .sec-hl { margin-bottom:.65rem; }
+.book-sub { font-size:1rem; color:var(--muted); line-height:1.7; margin-bottom:1.5rem; }
+.book-form-col .lead-form { background:transparent; border:none; border-radius:0; padding:0; }
+.book-form-col .lead-form::before { display:none; }
+@media(max-width:900px){
+  .book-split { grid-template-columns:1fr; }
+  .book-photo { min-height:260px; }
+}
+
+.lead-form {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:10px; padding:2.4rem; text-align:left;
+  position:relative; overflow:hidden;
+}
+.lead-form::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+
+.form-hd {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1.4rem; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--white); margin-bottom:.4rem;
+}
+.form-sd { font-size:.95rem; color:var(--muted); margin-bottom:1.8rem; }
+
+.f-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem; }
+.f-grp { display:flex; flex-direction:column; gap:.38rem; margin-bottom:1rem; }
+.f-grp label {
+  font-size:.82rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted);
+}
+.f-grp input, .f-grp select {
+  background:rgba(255,255,255,.04); border:1px solid var(--border);
+  border-radius:4px; padding:.8rem 1rem;
+  color:var(--warm); font-family:'Barlow',sans-serif; font-size:1rem;
+  outline:none; transition:border-color .2s;
+  -webkit-appearance:none; appearance:none;
+}
+.f-grp select {
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23717a8a' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 1rem center;
+  padding-right:2.5rem; cursor:pointer;
+}
+.f-grp select option { background:var(--surface); color:var(--warm); }
+.f-grp input:focus, .f-grp select:focus { border-color:var(--gold); }
+.f-grp input::placeholder { color:var(--muted); }
+
+.f-submit {
+  width:100%; background:var(--gold); color:var(--dark-txt); border:none;
+  border-radius:4px; padding:1.1rem;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1.1rem; letter-spacing:.12em; text-transform:uppercase;
+  cursor:pointer; transition:all .2s;
+  box-shadow:0 0 20px rgba(229,190,94,.18); margin-top:.5rem;
+}
+.f-submit:hover { filter:brightness(1.1); box-shadow:0 0 40px rgba(229,190,94,.32); }
+.f-submit:disabled { opacity:.5; cursor:not-allowed; }
+.f-note { text-align:center; font-size:.7rem; color:var(--muted); margin-top:.9rem; }
+
+.f-success { display:none; text-align:center; padding:2rem; }
+.f-success-icon { font-size:2.8rem; margin-bottom:.9rem; }
+.f-success-title {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1.7rem; text-transform:uppercase;
+  color:var(--gold); margin-bottom:.5rem;
+}
+.f-success-sub { color:var(--muted); font-size:.95rem; margin-bottom:1.5rem; line-height:1.6; }
+
+@media(max-width:480px){ .f-row { grid-template-columns:1fr; } }
+
+/* ── LOCATIONS / MAP ── */
+.loc-sec { background:var(--bg2); }
+.loc-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; margin-top:2.5rem; }
+
+.loc-map-wrap {
+  border-radius:8px; overflow:hidden;
+  border:1px solid var(--border);
+  position:relative;
+}
+.loc-map-wrap img { width:100%; height:auto; display:block; }
+.loc-map-wrap::after {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(to bottom,transparent 60%,var(--bg2) 100%);
+  pointer-events:none;
+}
+
+.loc-list { display:flex; flex-direction:column; gap:1.1rem; }
+.loc-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:6px; padding:1.25rem 1.5rem;
+  transition:border-color .2s;
+}
+.loc-card:hover { border-color:var(--gold-bdr); }
+.loc-name {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:1rem; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--white); margin-bottom:.3rem;
+  display:flex; align-items:center; gap:.5rem;
+}
+.loc-tri { height:14px; width:auto; }
+.loc-addr { font-size:1rem; color:var(--muted); line-height:1.5; }
+.loc-link {
+  display:inline-block; margin-top:.5rem;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:.82rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--gold); text-decoration:none; transition:opacity .2s;
+}
+.loc-link:hover { opacity:.75; }
+
+@media(max-width:768px){ .loc-grid { grid-template-columns:1fr; } }
+
+/* ── FAQ ── */
+.faq-sec { background:var(--bg); }
+.faq-list { margin-top:2.5rem; max-width:700px; display:flex; flex-direction:column; gap:.7rem; }
+.faq-item { background:var(--surface); border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+.faq-q {
+  width:100%; background:none; border:none; text-align:left;
+  padding:1.2rem 1.5rem; color:var(--warm);
+  font-family:'Barlow',sans-serif; font-size:1.05rem; font-weight:600;
+  cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  transition:color .2s;
+}
+.faq-q:hover { color:var(--gold); }
+.faq-icon { color:var(--gold); font-size:1.2rem; font-weight:300; flex-shrink:0; transition:transform .25s; line-height:1; }
+.faq-item.open .faq-icon { transform:rotate(45deg); }
+.faq-a {
+  max-height:0; overflow:hidden; transition:max-height .3s ease;
+  font-size:1rem; color:var(--muted); line-height:1.72; padding:0 1.5rem;
+}
+.faq-item.open .faq-a { max-height:300px; padding:0 1.5rem 1.2rem; }
+
+/* ── FOOTER ── */
+footer {
+  background:#060708; border-top:1px solid var(--border);
+  padding:3rem 5vw; text-align:center;
+}
+.footer-logo { margin:0 auto 1.2rem; }
+.footer-logo img { height:44px; width:auto; }
+.footer-links { display:flex; justify-content:center; flex-wrap:wrap; gap:1.5rem; list-style:none; margin-bottom:1.5rem; }
+.footer-links a { color:var(--muted); text-decoration:none; font-size:.95rem; transition:color .2s; }
+.footer-links a:hover { color:var(--warm); }
+.footer-copy { font-size:.78rem; color:#2e3340; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:none; }
+}
+.reveal { opacity:0; transform:translateY(22px); transition:opacity .55s ease,transform .55s ease; }
+.reveal.vis { opacity:1; transform:none; }
+
+/* ── PHOTO GALLERY ── */
+.gallery-sec { background:var(--bg2); padding:5.5rem 5vw; }
+
+.gallery-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
+  margin-top:2.5rem;
+}
+
+.gallery-item {
+  position:relative; overflow:hidden; border-radius:8px;
+  border:1px solid var(--border);
+  cursor:pointer;
+}
+
+.gallery-item img {
+  width:100%; height:320px; object-fit:cover; object-position:center top; display:block;
+  transition:transform .5s ease, filter .4s ease;
+  filter:brightness(.85) saturate(.9);
+}
+
+.gallery-item:hover img {
+  transform:scale(1.04);
+  filter:brightness(1) saturate(1);
+}
+
+.gallery-caption {
+  position:absolute; bottom:0; left:0; right:0;
+  padding:1.2rem 1.4rem .9rem;
+  background:linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 100%);
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:.88rem; letter-spacing:.1em; text-transform:uppercase;
+  color:rgba(240,236,228,.8);
+  opacity:0; transform:translateY(6px); transition:all .3s;
+}
+
+.gallery-item:hover .gallery-caption { opacity:1; transform:none; }
+
+@media(max-width:640px){
+  .gallery-grid { grid-template-columns:1fr; }
+  .gallery-item img { height:240px; }
+}
+
+/* ── HERO PHOTO ── */
+.hero-photo-accent {
+  position:absolute; right:0; bottom:0; top:0;
+  width:42%;
+  overflow:hidden;
+  mask-image:linear-gradient(to right, transparent 0%, black 30%);
+  pointer-events:none;
+  z-index:1;
+}
+.hero-photo-accent img {
+  width:100%; height:100%; object-fit:cover; object-position:center top;
+  filter:brightness(.55) saturate(.8);
+}
+
+/* ── SCHEDULING MODAL ── */
+.modal-overlay {
+  position:fixed; inset:0; z-index:900;
+  background:rgba(0,0,0,.75); backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center;
+  padding:1.5rem;
+  opacity:0; pointer-events:none; transition:opacity .3s;
+}
+.modal-overlay.open { opacity:1; pointer-events:all; }
+
+.modal {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:10px; padding:2.5rem; max-width:500px; width:100%;
+  position:relative; transform:translateY(16px); transition:transform .3s;
+}
+.modal-overlay.open .modal { transform:none; }
+.modal::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+.modal-close {
+  position:absolute; top:1rem; right:1rem;
+  background:none; border:none; color:var(--muted); font-size:1.3rem;
+  cursor:pointer; line-height:1; transition:color .2s;
+}
+.modal-close:hover { color:var(--warm); }
+.modal-icon { font-size:2.5rem; margin-bottom:.9rem; }
+.modal-title {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1.6rem; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--white); margin-bottom:.5rem;
+}
+.modal-body { font-size:.9rem; color:var(--muted); line-height:1.7; margin-bottom:1.75rem; }
+.modal-body strong { color:var(--warm); }
+.modal-locs { display:flex; flex-direction:column; gap:.75rem; margin-bottom:1.5rem; }
+.modal-loc-btn {
+  display:flex; align-items:center; justify-content:space-between;
+  background:rgba(229,190,94,.07); border:1px solid var(--gold-bdr);
+  border-radius:6px; padding:1rem 1.25rem;
+  color:var(--warm); font-family:'Barlow Condensed',sans-serif;
+  font-weight:700; font-size:.95rem; letter-spacing:.06em; text-transform:uppercase;
+  text-decoration:none; cursor:pointer; transition:all .2s;
+}
+.modal-loc-btn:hover { background:rgba(229,190,94,.15); border-color:var(--gold); color:var(--gold); }
+.modal-loc-addr { font-size:.72rem; color:var(--muted); font-weight:400; letter-spacing:.02em; text-transform:none; margin-top:.15rem; }
+.modal-loc-left { text-align:left; }
+.modal-arrow { font-size:1.1rem; flex-shrink:0; color:var(--gold); }
+.modal-note { text-align:center; font-size:.72rem; color:var(--muted); }
+.utm-badge {
+  position:fixed; bottom:1.5rem; right:1.5rem;
+  background:var(--surface); border:1px solid var(--gold-bdr);
+  border-radius:5px; padding:.55rem 1rem;
+  font-size:.7rem; color:var(--gold);
+  font-family:'Barlow Condensed',sans-serif; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase;
+  opacity:0; transform:translateY(8px); transition:all .4s;
+  pointer-events:none; z-index:500;
+}
+.utm-badge.show { opacity:1; transform:none; }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">🔥 Limited Spots — New Patient Special · Gilbert · Tempe · Phoenix</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="/mnt/user-data/uploads/Transparent_.png" alt="Axis Spine and Sport">
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://www.axisspineandsport.com/#services" target="_blank">Services</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="https://www.axisspineandsport.com/faq-about-chiropractor/" target="_blank">FAQs</a></li>
+    <li><a href="#book" class="nav-cta">Book — $59 Special</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-photo-accent">
+    <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_48_10_AM.png" alt="">
+  </div>
+  <div class="hero-inner">
+
+    <div class="hero-copy">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-dot"></div>
+        <span class="hero-eyebrow-text">New Patient Special — Gilbert · Tempe · Phoenix</span>
+      </div>
+      <h1 class="hero-hl">
+        Stop<br>
+        <span class="it gold">Guessing.</span><br>
+        <span class="silver">Start</span><br>
+        Fixing.
+      </h1>
+      <p class="hero-sub">Your spine is the reason you feel tight, sluggish, and in pain. An adjustment alone won't fix it. We build real corrective plans with measurable results — in under 30 days.</p>
+      <div class="hero-btns">
+        <a href="#book" class="btn-gold">Claim Your $59 New Patient Special →</a>
+        <a href="https://www.axisspineandsport.com/#services" target="_blank" class="btn-ghost">See Our Services →</a>
+      </div>
+    </div>
+
+    <!-- PRICE CARD -->
+    <div class="price-card">
+      <div class="price-triangles">
+        <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" alt="Axis triangles">
+      </div>
+      <div class="price-lbl">New Patient Special</div>
+      <div class="price-amt"><sup>$</sup>59</div>
+      <div class="price-was">Value: $350+</div>
+      <ul class="price-list">
+        <li><span class="chk">▼</span> Full Consultation &amp; Exam</li>
+        <li><span class="chk">▼</span> Diagnostic X-Rays</li>
+        <li><span class="chk">▼</span> Percussion Massage Therapy</li>
+        <li><span class="chk">▼</span> First Chiropractic Adjustment</li>
+        <li><span class="chk">▼</span> Personalized Corrective Plan Review</li>
+      </ul>
+      <a href="#book" class="price-cta-btn">Claim Your $59 New Patient Special</a>
+      <p class="price-note">New patients only · All Arizona locations</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<div class="angle-dn"></div>
+<section class="prob-sec">
+  <div class="prob-photo-bg">
+    <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_58_28_AM.png" alt="">
+  </div>
+  <div class="sec-inner">
+    <div class="sec-eye reveal">Sound familiar?</div>
+    <h2 class="sec-hl reveal">You've tried<br><span class="it">everything.</span></h2>
+    <p style="color:var(--muted);max-width:560px;line-height:1.72;font-size:1.05rem;" class="reveal">Stretching. Ibuprofen. Massage. Maybe even another chiropractor who just kept adjusting you with no plan. If nothing lasted — there's a structural reason.</p>
+    <div class="prob-grid">
+      <div class="prob-card reveal">
+        <div class="prob-icon">⚡</div>
+        <div class="prob-title">Pain That Keeps Coming Back</div>
+        <p class="prob-desc">You feel better for a day, then it returns. Without correcting the underlying cause, nothing sticks.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="prob-icon">🔄</div>
+        <div class="prob-title">Adjustments With No End in Sight</div>
+        <p class="prob-desc">You've been told to keep coming back but never given a clear timeline or measurable goal. That's not a plan.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="prob-icon">🧠</div>
+        <div class="prob-title">Nobody Can Tell You Why</div>
+        <p class="prob-desc">You've never seen your own imaging, had your posture analyzed, or been given a root cause. That ends here.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="prob-icon">🏋️</div>
+        <div class="prob-title">Feeling Limited in Everything</div>
+        <p class="prob-desc">Your back, neck, or hips quietly hold back everything — at work, at the gym, and at home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="angle-up"></div>
+
+<!-- SOLUTION SECTION -->
+<section class="sol-sec">
+  <div class="sec-inner">
+    <div class="sec-eye reveal">The Axis Approach</div>
+    <h2 class="sec-hl reveal">Everything you need.<br><span class="it">One roof. One plan.</span></h2>
+    <div class="sol-grid">
+      <div class="svc-list">
+        <div class="svc-item reveal">
+          <div class="svc-icon">🦴</div>
+          <div style="flex:1;">
+            <div class="svc-name">Chiropractic Care</div>
+            <p class="svc-desc">Precision adjustments based on your imaging — not a one-size approach.</p>
+          </div>
+          <div class="svc-thumb">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_56_16_AM.png" alt="Chiropractic adjustment">
+          </div>
+        </div>
+        <div class="svc-item reveal">
+          <div class="svc-icon">🤸</div>
+          <div style="flex:1;">
+            <div class="svc-name">Corrective Exercise &amp; Stretching</div>
+            <p class="svc-desc">Protocols that reinforce your adjustments so changes hold between visits.</p>
+          </div>
+          <div class="svc-thumb">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_51_00_AM.png" alt="Corrective exercise">
+          </div>
+        </div>
+        <div class="svc-item reveal">
+          <div class="svc-icon">💪</div>
+          <div style="flex:1;">
+            <div class="svc-name">Soft Tissue &amp; Massage Therapy</div>
+            <p class="svc-desc">Percussion, manual therapy, and myofascial release to restore range of motion.</p>
+          </div>
+          <div class="svc-thumb">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_53_18_AM.png" alt="Soft tissue therapy">
+          </div>
+        </div>
+        <div class="svc-item reveal">
+          <div class="svc-icon">🏃</div>
+          <div style="flex:1;">
+            <div class="svc-name">Sports Medicine Techniques</div>
+            <p class="svc-desc">Whether athlete or desk worker — we apply sports medicine principles to every case.</p>
+          </div>
+          <div class="svc-thumb">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_58_08_AM.png" alt="Sports medicine treatment">
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-box reveal">
+        <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="gold-tri-accent" alt="">
+        <div>
+          <div class="stat-num">&lt;30</div>
+          <div class="stat-lbl">Days to measurable results on a full corrective plan</div>
+        </div>
+        <div class="stat-rule"></div>
+        <div>
+          <div class="stat-num">&lt;3hrs</div>
+          <div class="stat-lbl">Per week — all it takes to follow the plan</div>
+        </div>
+        <div class="stat-rule"></div>
+        <p class="stat-quote">"We don't just adjust you and send you home. We find <strong>why</strong> you feel the way you do, build a plan around it, and measure your progress every step of the way."</p>
+        <div class="stat-photo">
+          <img src="/mnt/user-data/uploads/15-DSC05751.jpg" alt="Rehab and exercise floor">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<div class="angle-dn"></div>
+<section class="hiw-sec">
+  <div class="hiw-photo-bg">
+    <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_50_00_AM.png" alt="">
+  </div>
+  <div class="sec-inner">
+    <div class="sec-eye reveal">What to Expect</div>
+    <h2 class="sec-hl reveal">Your $59 visit,<br><span class="it">step by step.</span></h2>
+    <!-- Row 1: steps 1–3 -->
+    <div class="steps-row steps-row-1">
+      <div class="step reveal">
+        <div class="step-n">1</div>
+        <div class="step-t">Book Online</div>
+        <p class="step-d">Pick your location and time. Same-week appointments usually available.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">2</div>
+        <div class="step-t">Consult &amp; X-Rays</div>
+        <p class="step-d">We listen. We look at your imaging. We identify what's actually going on.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">3</div>
+        <div class="step-t">Percussion Massage</div>
+        <p class="step-d">Loosen tight tissue and prep your body for the adjustment.</p>
+      </div>
+    </div>
+    <!-- Row 2: steps 4–5 centered -->
+    <div class="steps-row steps-row-2">
+      <div class="step reveal">
+        <div class="step-n">4</div>
+        <div class="step-t">First Adjustment</div>
+        <p class="step-d">Precisely targeted to your imaging and case — not a generic crack.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">5</div>
+        <div class="step-t">Get Your Plan</div>
+        <p class="step-d">Leave with a real corrective plan — timeline, milestones, clear goal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="angle-up"></div>
+
+<!-- BOOK FORM -->
+<section class="book-sec" id="book">
+  <div class="sec-inner">
+    <div class="book-split">
+      <div class="book-photo reveal">
+        <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_53_43_AM.png" alt="Axis Spine and Sport exterior">
+        <div class="book-photo-overlay">
+          <div class="book-photo-tag">
+            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
+            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);">Gilbert · Tempe · Phoenix</div>
+            <div style="font-size:.9rem;color:rgba(240,236,228,.7);margin-top:.3rem;">Same-week appointments available</div>
+          </div>
+        </div>
+      </div>
+      <div class="book-form-col">
+        <div class="sec-eye">Claim Your Spot</div>
+        <h2 class="sec-hl">Ready to<br><span class="it">fix this?</span></h2>
+        <p class="book-sub">Fill out the form and we'll reach out to confirm your $59 appointment. Takes 30 seconds.</p>
+
+      <div class="lead-form">
+        <div class="form-hd">Book Your $59 Visit</div>
+        <p class="form-sd">New patients only · All Arizona locations · No hidden fees</p>
+
+        <div id="fFields">
+          <div class="f-row">
+            <div class="f-grp">
+              <label>First Name</label>
+              <input type="text" id="fFirst" placeholder="First" autocomplete="given-name">
+            </div>
+            <div class="f-grp">
+              <label>Last Name</label>
+              <input type="text" id="fLast" placeholder="Last" autocomplete="family-name">
+            </div>
+          </div>
+          <div class="f-grp">
+            <label>Phone Number</label>
+            <input type="tel" id="fPhone" placeholder="(480) 555-0100" autocomplete="tel">
+          </div>
+          <div class="f-grp">
+            <label>Email Address</label>
+            <input type="email" id="fEmail" placeholder="you@email.com" autocomplete="email">
+          </div>
+          <div class="f-grp">
+            <label>Preferred Location</label>
+            <select id="fLoc">
+              <option value="">Select a location...</option>
+              <option value="Gilbert">Gilbert — 3341 E Queen Creek Rd Ste 109</option>
+              <option value="Tempe">Tempe — 2155 E University Dr Ste 110</option>
+              <option value="Phoenix">Phoenix — 4515 N 16th St Ste 106</option>
+
+            </select>
+          </div>
+          <div class="f-grp">
+            <label>How Did You Hear About Us?</label>
+            <select id="fSrc">
+              <option value="">Select one...</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Facebook">Facebook</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Google">Google</option>
+              <option value="Yelp">Yelp</option>
+              <option value="Friends / Family / Coworker">Friends / Family / Coworker</option>
+            </select>
+          </div>
+          <button class="f-submit" id="fBtn" onclick="submitLead()">
+            Claim My $59 New Patient Special →
+          </button>
+          <p class="f-note" style="font-size:.8rem;">🔒 We never share your info. We'll reach out within 1 business hour.</p>
+        </div>
+
+        <div class="f-success" id="fSuccess">
+          <div class="f-success-icon">✅</div>
+          <div class="f-success-title">You're in!</div>
+          <p class="f-success-sub">One last step — pick your actual appointment time below. We'll have everything on file when you arrive.</p>
+          <button class="btn-gold" id="scheduleBtn" style="display:inline-block;width:100%;margin-bottom:.75rem;border:none;cursor:pointer;font-size:1.05rem;" onclick="goSchedule()">
+            📅 Choose Your Appointment Time →
+          </button>
+          <p style="font-size:.72rem;color:var(--muted);text-align:center;">Opens your location's scheduling page in a new tab</p>
+        </div><!-- end f-success -->
+      </div><!-- end lead-form -->
+      </div><!-- end book-form-col -->
+    </div><!-- end book-split -->
+  </div><!-- end sec-inner -->
+</section>
+<div class="angle-dn"></div>
+<section class="loc-sec" id="locations">
+  <div class="sec-inner">
+    <div class="sec-eye reveal">Three Locations</div>
+    <h2 class="sec-hl reveal">We're in<br><span class="it">your neighborhood.</span></h2>
+    <div class="loc-grid">
+      <div class="loc-map-wrap reveal">
+        <img src="/mnt/user-data/uploads/3_Locations_Map.PNG" alt="Axis Spine and Sport location map — Phoenix metro area">
+      </div>
+      <div>
+        <div class="loc-clinic-photos reveal">
+          <div class="loc-clinic-photo">
+            <img src="/mnt/user-data/uploads/04-DSC05646.jpg" alt="Axis clinic interior">
+          </div>
+          <div class="loc-clinic-photo">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-05-20_at_9_46_09_AM.png" alt="Doctor consulting with patient">
+          </div>
+        </div>
+        <div class="loc-list reveal">
+        <div class="loc-card">
+          <div class="loc-name">
+            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            Gilbert
+          </div>
+          <div class="loc-addr">3341 E Queen Creek Rd, Ste 109<br>Gilbert, AZ</div>
+          <a href="https://www.axisspineandsport.com/locations/" target="_blank" class="loc-link">Get Directions →</a>
+        </div>
+        <div class="loc-card">
+          <div class="loc-name">
+            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            Tempe
+          </div>
+          <div class="loc-addr">2155 E University Dr, Ste 110<br>Tempe, AZ</div>
+          <a href="https://www.axisspineandsport.com/locations/" target="_blank" class="loc-link">Get Directions →</a>
+        </div>
+        <div class="loc-card">
+          <div class="loc-name">
+            <img src="/mnt/user-data/uploads/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            Phoenix
+          </div>
+          <div class="loc-addr">4515 N 16th St, Ste 106<br>Phoenix, AZ</div>
+          <a href="https://www.axisspineandsport.com/locations/" target="_blank" class="loc-link">Get Directions →</a>
+        </div>
+      </div><!-- end loc-list -->
+      </div><!-- end right col -->
+    </div><!-- end loc-grid -->
+  </div>
+</section>
+<div class="angle-up"></div>
+
+<!-- FAQ -->
+<section class="faq-sec">
+  <div class="sec-inner">
+    <div class="sec-eye reveal">Common Questions</div>
+    <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="faq(this)">
+          What's included in the $59 visit?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Your $59 visit includes a full consultation and physical exam, diagnostic X-rays, a percussion massage session, and your first chiropractic adjustment. You'll also leave with a personalized corrective care plan.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="faq(this)">
+          How is this different from a regular chiropractor?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Most chiropractic offices focus solely on adjustments. We combine chiropractic care with corrective exercise, soft tissue therapy, and sports medicine — all under one roof. Every patient gets a structured corrective plan with a clear timeline and milestones, not open-ended maintenance care.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="faq(this)">
+          Will I need to commit to a long treatment plan?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">After your first visit we'll present a corrective care plan based on your specific findings. Patients who follow the plan typically see measurable changes within the first 4 weeks — in less than 3 hours per week. You're never locked in.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="faq(this)">
+          Do you accept insurance?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">We accept many major insurance plans. The $59 new patient special is available regardless of insurance status — it's a flat rate for your complete first visit. Our team can discuss insurance for ongoing care after your visit.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="faq(this)">
+          Which locations offer this special?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">The $59 new patient special is available at all Axis Spine and Sport locations: Gilbert, Tempe, and Phoenix. Visit our locations page for hours and directions.</div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;" class="reveal">
+      <a href="https://www.axisspineandsport.com/faq-about-chiropractor/" target="_blank" class="btn-ghost">See All FAQs →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="/mnt/user-data/uploads/Transparent_.png" alt="Axis Spine and Sport">
+  </div>
+  <ul class="footer-links">
+    <li><a href="https://www.axisspineandsport.com/locations-schedule/" target="_blank">Schedule</a></li>
+    <li><a href="https://www.axisspineandsport.com/#services" target="_blank">Services</a></li>
+    <li><a href="https://www.axisspineandsport.com/locations/" target="_blank">Locations</a></li>
+    <li><a href="https://www.axisspineandsport.com/faq-about-chiropractor/" target="_blank">FAQs</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 Axis Spine and Sport · Axis Management LLC dba Axis Spine and Sport · New patient special valid for first-time patients only · Gilbert · Tempe · Phoenix.</p>
+</footer>
+
+<!-- SCHEDULING MODAL -->
+<div class="modal-overlay" id="schedModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-icon">📅</div>
+    <div class="modal-title">Choose Your Location</div>
+    <p class="modal-body">Pick the location you'd like to visit — you'll be taken directly to that clinic's online scheduling page to lock in your time.</p>
+    <div class="modal-locs">
+      <a class="modal-loc-btn" href="https://www.axisspineandsport.com/locations-schedule/" target="_blank" onclick="trackScheduleClick('Gilbert')">
+        <div class="modal-loc-left">
+          <div>📍 Gilbert</div>
+          <div class="modal-loc-addr">3341 E Queen Creek Rd, Ste 109</div>
+        </div>
+        <span class="modal-arrow">→</span>
+      </a>
+      <a class="modal-loc-btn" href="https://www.axisspineandsport.com/locations-schedule/" target="_blank" onclick="trackScheduleClick('Tempe')">
+        <div class="modal-loc-left">
+          <div>📍 Tempe</div>
+          <div class="modal-loc-addr">2155 E University Dr, Ste 110</div>
+        </div>
+        <span class="modal-arrow">→</span>
+      </a>
+      <a class="modal-loc-btn" href="https://www.axisspineandsport.com/locations-schedule/" target="_blank" onclick="trackScheduleClick('Phoenix')">
+        <div class="modal-loc-left">
+          <div>📍 Phoenix</div>
+          <div class="modal-loc-addr">4515 N 16th St, Ste 106</div>
+        </div>
+        <span class="modal-arrow">→</span>
+      </a>
+    </div>
+    <p class="modal-note">🔒 Your info is already saved. Just pick your time on the next page.</p>
+  </div>
+</div>
+
+<div class="utm-badge" id="utmBadge"></div>
+
+<script>
+/* ── UTM ── */
+const params = new URLSearchParams(window.location.search);
+const src = params.get('src') || params.get('utm_content') || null;
+const camp = params.get('utm_campaign') || null;
+
+const srcMap = {
+  'ig-why':   'Instagram Ad — Why Hook',
+  'ig-fedup': 'Instagram Ad — Fed Up Hook',
+  'ig-diff':  'Instagram Ad — Differentiation Hook',
+  'ig-perf':  'Instagram Ad — Performance Hook',
+  'ig-offer': 'Instagram Ad — Offer Hook',
+};
+const dropMap = {
+  'ig-why':   'Instagram',
+  'ig-fedup': 'Instagram',
+  'ig-diff':  'Instagram',
+  'ig-perf':  'Instagram',
+  'ig-offer': 'Instagram',
+};
+
+let resolvedSource = srcMap[src] || (src ? decodeURIComponent(src) : null);
+let leadData = {};
+
+if (resolvedSource) {
+  const sel = document.getElementById('fSrc');
+  if (dropMap[src]) sel.value = dropMap[src];
+  const badge = document.getElementById('utmBadge');
+  badge.textContent = '📲 ' + resolvedSource;
+  setTimeout(() => badge.classList.add('show'), 900);
+  setTimeout(() => badge.classList.remove('show'), 5500);
+}
+
+/* ── WEBHOOK ── */
+/* REPLACE with your Zapier or Make.com webhook URL */
+const WEBHOOK = 'YOUR_ZAPIER_OR_MAKE_WEBHOOK_URL_HERE';
+
+async function fireWebhook(payload) {
+  if (WEBHOOK === 'YOUR_ZAPIER_OR_MAKE_WEBHOOK_URL_HERE') {
+    console.log('📋 Webhook payload (demo):', payload);
+    return true;
+  }
+  try {
+    await fetch(WEBHOOK, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload),
+      mode:'no-cors',
+    });
+    return true;
+  } catch(e) {
+    console.warn('Webhook error:', e);
+    return false;
+  }
+}
+
+/* ── SUBMIT FORM ── */
+async function submitLead() {
+  const btn = document.getElementById('fBtn');
+  const first  = document.getElementById('fFirst').value.trim();
+  const last   = document.getElementById('fLast').value.trim();
+  const phone  = document.getElementById('fPhone').value.trim();
+  const email  = document.getElementById('fEmail').value.trim();
+  const loc    = document.getElementById('fLoc').value;
+  const source = document.getElementById('fSrc').value;
+
+  if (!first || !last || !phone || !email || !loc) {
+    alert('Please fill out all required fields.');
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  leadData = {
+    firstName: first, lastName: last, phone, email,
+    location: loc,
+    source: source || resolvedSource || 'Unknown',
+    utmSrc: src || '', utmCampaign: camp || '',
+    event: 'form_submit',
+    page: window.location.href,
+    timestamp: new Date().toISOString(),
+  };
+
+  /* Fire webhook: new lead alert */
+  await fireWebhook(leadData);
+
+  document.getElementById('fFields').style.display = 'none';
+  document.getElementById('fSuccess').style.display = 'block';
+}
+
+/* ── OPEN SCHEDULING MODAL ── */
+function goSchedule() {
+  document.getElementById('schedModal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('schedModal').classList.remove('open');
+}
+
+/* Close on overlay click */
+document.getElementById('schedModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+/* ── TRACK SCHEDULING CLICK + FIRE SECOND ALERT ── */
+async function trackScheduleClick(location) {
+  const payload = {
+    ...leadData,
+    event: 'schedule_click',
+    schedulingLocation: location,
+    timestamp: new Date().toISOString(),
+  };
+  /* Second webhook ping: patient clicked to schedule — you get notified */
+  await fireWebhook(payload);
+  /* Don't prevent default — let the link open */
+}
+
+/* ── SCROLL REVEAL ── */
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('vis'), i * 55);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* ── FAQ ── */
+function faq(btn) {
+  const item = btn.closest('.faq-item');
+  const open = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!open) item.classList.add('open');
+}
+
+/* ── UTM on schedule links ── */
+const utmSuffix = src ? `?utm_source=instagram&utm_medium=paid&utm_content=${src}` : '';
+if (utmSuffix) {
+  document.querySelectorAll('a[href*="locations-schedule"]').forEach(a => {
+    if (!a.href.includes('utm_source')) a.href += utmSuffix;
+  });
+}
+</script>
+</body>
+</html>
