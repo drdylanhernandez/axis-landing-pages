@@ -542,9 +542,7 @@ section { padding:5.5rem 5vw; }
 }
 .loc-map-wrap img { width:100%; height:auto; display:block; object-fit:cover; object-position:center 20%; }
 .loc-map-wrap::after {
-  content:''; position:absolute; inset:0;
-  background:linear-gradient(to bottom,transparent 75%,var(--bg2) 100%);
-  pointer-events:none;
+  display:none;
 }
 
 .loc-list { display:flex; flex-direction:column; gap:1.1rem; }
@@ -1089,7 +1087,7 @@ footer {
         <div class="loc-list reveal">
         <div class="loc-card">
           <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisgilbertfront.jpg" alt="Axis Gilbert exterior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Front2.jpg" alt="Axis Gilbert exterior">
           </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
@@ -1100,7 +1098,7 @@ footer {
         </div>
         <div class="loc-card">
           <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axistempefront.jpg" alt="Axis Tempe exterior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/exterior.jpg" alt="Axis Tempe exterior">
           </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
@@ -1111,7 +1109,7 @@ footer {
         </div>
         <div class="loc-card">
           <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisphoenixfront.jpg" alt="Axis Phoenix exterior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axis-front-sign-phoenix.jpg" alt="Axis Phoenix exterior">
           </div>
           <div class="loc-name">
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
