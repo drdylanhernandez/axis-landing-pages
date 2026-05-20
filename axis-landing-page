@@ -440,6 +440,18 @@ section { padding:5.5rem 5vw; }
 .loc-clinic-photo:hover img {
   transform:scale(1.04); filter:brightness(1) saturate(1);
 }
+/* ── VIDEO SECTION ── */
+.video-sec { background:var(--bg); padding:5.5rem 5vw; }
+.video-wrap {
+  position:relative; width:100%; max-width:800px; margin:0 auto;
+  border-radius:10px; overflow:hidden; border:1px solid var(--border);
+  box-shadow:0 0 60px rgba(229,190,94,.1); aspect-ratio:16/9;
+}
+.video-wrap iframe {
+  position:absolute; top:0; left:0; width:100%; height:100%; display:block;
+}
+
+/* ── BOOK SPLIT ── */
 .book-sec { background:var(--bg); padding:5.5rem 5vw; }
 .book-split {
   display:grid; grid-template-columns:1fr 520px; gap:0;
@@ -821,7 +833,7 @@ footer {
     <!-- PRICE CARD -->
     <div class="price-card">
       <div class="price-triangles">
-        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" alt="Axis triangles">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="Axis triangles">
       </div>
       <div class="price-lbl">New Patient Special</div>
       <div class="price-amt"><sup>$</sup>59</div>
@@ -926,7 +938,7 @@ footer {
       </div>
 
       <div class="stat-box reveal">
-        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="gold-tri-accent" alt="">
+        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="gold-tri-accent" alt="">
         <div>
           <div class="stat-num">&lt;30</div>
           <div class="stat-lbl">Days to measurable results on a full corrective plan</div>
@@ -990,6 +1002,29 @@ footer {
 </section>
 <div class="angle-up"></div>
 
+<div class="angle-up"></div>
+
+<!-- VIDEO SECTION -->
+<section class="video-sec">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="sec-eye reveal">See It For Yourself</div>
+    <h2 class="sec-hl reveal">What to expect at<br><span class="it">your first visit.</span></h2>
+    <p style="color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:560px;margin:0 auto 2.5rem;" class="reveal">A real look at what happens when you walk through our doors — from check-in to your corrective plan.</p>
+    <div class="video-wrap reveal">
+      <iframe
+        src="https://www.youtube.com/embed/JArKBU1mvrk?rel=0&modestbranding=1&color=white"
+        title="What to Expect at Your First Visit — Axis Spine and Sport"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div style="margin-top:2rem;" class="reveal">
+      <a href="#book" class="btn-gold">Claim Your $59 New Patient Special →</a>
+    </div>
+  </div>
+</section>
+
 <!-- BOOK FORM -->
 <section class="book-sec" id="book">
   <div class="sec-inner">
@@ -998,7 +1033,7 @@ footer {
         <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/frontdesksmile.jpg" alt="Axis Spine and Sport exterior">
         <div class="book-photo-overlay">
           <div class="book-photo-tag">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" style="height:20px;width:auto;margin-bottom:.5rem;" alt="">
             <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);">Gilbert · Tempe · Phoenix</div>
             <div style="font-size:.9rem;color:rgba(240,236,228,.7);margin-top:.3rem;">Same-week appointments available</div>
           </div>
@@ -1090,7 +1125,7 @@ footer {
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axisgilbertfront.jpg" alt="Axis Gilbert exterior">
           </div>
           <div class="loc-name">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="loc-tri" alt="▼">
             Gilbert
           </div>
           <div class="loc-addr">3341 E Queen Creek Rd, Ste 109<br>Gilbert, AZ</div>
@@ -1101,7 +1136,7 @@ footer {
             <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/Exterior.jpg" alt="Axis Tempe exterior">
           </div>
           <div class="loc-name">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="loc-tri" alt="▼">
             Tempe
           </div>
           <div class="loc-addr">2155 E University Dr, Ste 110<br>Tempe, AZ</div>
@@ -1109,10 +1144,10 @@ footer {
         </div>
         <div class="loc-card">
           <div class="loc-card-photo">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/axis-front-sign-phoenix.jpg" alt="Axis Phoenix exterior">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/57-DSC05896.jpg" alt="Axis Phoenix exterior">
           </div>
           <div class="loc-name">
-            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/3_Gold_Triangles_Enhanced.png" class="loc-tri" alt="▼">
+            <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" class="loc-tri" alt="▼">
             Phoenix
           </div>
           <div class="loc-addr">4515 N 16th St, Ste 106<br>Phoenix, AZ</div>
@@ -1126,8 +1161,11 @@ footer {
 <div class="angle-up"></div>
 
 <!-- FAQ -->
-<section class="faq-sec">
-  <div class="sec-inner">
+<section class="faq-sec" style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;z-index:0;">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/adjustment-bay-phoenix.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.1) saturate(.4);">
+  </div>
+  <div class="sec-inner" style="position:relative;z-index:1;">
     <div class="sec-eye reveal">Common Questions</div>
     <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
     <div class="faq-list">
@@ -1169,8 +1207,8 @@ footer {
     </div>
     <div style="margin-top:2rem;" class="reveal">
       <a href="https://www.axisspineandsport.com/faq-about-chiropractor/" target="_blank" class="btn-ghost">See All FAQs →</a>
-    </div>
-  </div>
+    </div><!-- end sec-inner -->
+  </div><!-- end faq-sec -->
 </section>
 
 <!-- FOOTER -->
