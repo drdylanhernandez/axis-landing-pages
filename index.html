@@ -1105,6 +1105,111 @@ footer {
   pointer-events:none; z-index:500;
 }
 .utm-badge.show { opacity:1; transform:none; }
+
+/* ═══════════════════════════════════════
+   MOBILE — comprehensive (≤480px)
+   ═══════════════════════════════════════ */
+@media(max-width:480px){
+  section { padding:3.5rem 5vw; }
+
+  /* Hero */
+  .hero { padding:13rem 5vw 3rem; min-height:auto; }
+  .hero-logo-center img { height:90px; }
+  .hero-logo-center { top:1.5rem; gap:.75rem; }
+  .hero-logo-eyebrow-text { font-size:.78rem; letter-spacing:.1em; }
+  .hero-inner { grid-template-columns:1fr; gap:2rem; }
+  .hero-hl { font-size:3.8rem; }
+  .hero-sub { font-size:1rem; }
+  .hero-photo-accent { display:none; }
+  .hero-glow { display:none; }
+  .hero-btns { flex-direction:column; }
+  .hero-btns a { width:100%; text-align:center; }
+  .price-card { max-width:100%; }
+
+  /* Trust */
+  .trust-stats-row { grid-template-columns:1fr; }
+  .trust-stat { padding:1rem 0; }
+  .trust-stat-divider { width:80px; height:1px; justify-self:center; }
+  .trust-stat-num { font-size:3rem; }
+  .trust-badges-row { flex-direction:column; gap:.75rem; text-align:center; }
+  .trust-badge-sep { display:none; }
+  .trust-badge { justify-content:center; }
+
+  /* Solution */
+  .sol-grid { grid-template-columns:1fr; gap:2rem; }
+  .stat-box { padding:1.5rem; }
+  .stat-num { font-size:3rem; }
+
+  /* Testimonials */
+  .testimonials-grid { grid-template-columns:1fr; }
+
+  /* Steps */
+  .steps-row { flex-direction:column; align-items:center; gap:2rem; }
+  .steps-row-1::before, .steps-row-2::before { display:none; }
+  .step { width:100%; max-width:280px; }
+
+  /* Book form */
+  .book-split { grid-template-columns:1fr; }
+  .book-photo { display:none; }
+  .book-form-col { padding:1.5rem; }
+  .f-row { grid-template-columns:1fr; }
+
+  /* Locations */
+  .loc-grid { grid-template-columns:1fr; }
+  .loc-card-photo { width:90px; height:90px; }
+
+  /* FAQ */
+  .faq-list { max-width:100%; }
+
+  /* Angles */
+  .angle-dn, .angle-up { height:36px; }
+
+  /* Full-width buttons */
+  .btn-gold, .btn-ghost { width:100%; text-align:center; display:block; box-sizing:border-box; }
+
+  /* Show sticky CTA */
+  .mobile-cta-bar { display:flex !important; }
+
+  /* Add bottom padding so sticky bar doesn't cover content */
+  body { padding-bottom:70px; }
+}
+
+/* Tablet (481–768px) */
+@media(min-width:481px) and (max-width:768px){
+  .hero { padding:14rem 5vw 3rem; }
+  .hero-photo-accent { display:none; }
+  .sol-grid { grid-template-columns:1fr; gap:2rem; }
+  .book-photo { display:none; }
+  .book-form-col { padding:2rem; }
+  .steps-row-1::before, .steps-row-2::before { display:none; }
+  .steps-row { flex-wrap:wrap; justify-content:center; gap:2rem; }
+  .step { width:calc(33% - 1rem); min-width:160px; }
+  .testimonials-grid { grid-template-columns:1fr 1fr; }
+}
+
+/* Sticky bottom CTA bar — mobile only */
+.mobile-cta-bar {
+  display:none;
+  position:fixed;
+  bottom:0; left:0; right:0;
+  background:var(--gold);
+  padding:1rem 1.5rem;
+  z-index:200;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 -4px 24px rgba(229,190,94,.3);
+}
+.mobile-cta-bar a {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1.05rem;
+  letter-spacing:.1em; text-transform:uppercase;
+  color:var(--dark-txt); text-decoration:none;
+}
+.mobile-cta-bar-price {
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900; font-size:1.05rem;
+  color:rgba(10,11,13,.55); white-space:nowrap;
+}
 </style>
 </head>
 <body>
@@ -1654,6 +1759,12 @@ footer {
     </div>
     <p class="modal-note">🔒 Your info is already saved. Just pick your time on the next page.</p>
   </div>
+</div>
+
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-cta-bar">
+  <span class="mobile-cta-bar-price">$59 Special</span>
+  <a href="#book">Claim Your Appointment →</a>
 </div>
 
 <div class="utm-badge" id="utmBadge"></div>
