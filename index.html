@@ -815,30 +815,13 @@ section { padding:5.5rem 5vw; }
 @media(max-width:768px){ .loc-grid { grid-template-columns:1fr; } }
 
 /* ── FAQ ── */
-.faq-sec { background:var(--bg); }
-.faq-inner {
-  max-width:1100px; margin:0 auto;
-  display:grid; grid-template-columns:1fr 380px; gap:4rem; align-items:start;
+.faq-sec { background:var(--bg); position:relative; overflow:hidden; }
+.faq-photo-bg { position:absolute; inset:0; z-index:0; }
+.faq-photo-bg img {
+  width:100%; height:100%; object-fit:cover; object-position:center 30%;
+  filter:brightness(.15) saturate(.4);
 }
-.faq-photo-panel {
-  border-radius:8px; overflow:hidden;
-  border:1px solid var(--border);
-  position:sticky; top:100px;
-  background:var(--surface);
-  height:520px;
-}
-.faq-photo-panel img {
-  width:100%;
-  height:100%;
-  display:block;
-  filter:brightness(.92);
-  object-fit:cover;
-  object-position:center 20%;
-}
-@media(max-width:900px){
-  .faq-inner { grid-template-columns:1fr; }
-  .faq-photo-panel { display:none; }
-}
+.faq-sec .sec-inner { position:relative; z-index:1; }
 .faq-list { margin-top:2.5rem; max-width:700px; display:flex; flex-direction:column; gap:.7rem; }
 .faq-item { background:var(--surface); border:1px solid var(--border); border-radius:6px; overflow:hidden; }
 .faq-q {
@@ -1575,13 +1558,14 @@ footer {
 <div class="angle-up"></div>
 
 <!-- FAQ -->
-<section class="faq-sec" id="faq-section">
-  <div class="sec-inner" style="max-width:1100px;margin:0 auto;padding:5.5rem 5vw;">
-    <div class="faq-inner">
-      <div>
-        <div class="sec-eye reveal">Common Questions</div>
-        <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
-        <div class="faq-list">
+<section class="faq-sec">
+  <div class="faq-photo-bg">
+    <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="">
+  </div>
+  <div class="sec-inner">
+    <div class="sec-eye reveal">Common Questions</div>
+    <h2 class="sec-hl reveal">Got questions?<br><span class="it">We've got answers.</span></h2>
+    <div class="faq-list">
       <div class="faq-item reveal">
         <button class="faq-q" onclick="faq(this)">
           What's included in the $59 visit?
@@ -1621,12 +1605,7 @@ footer {
     <div style="margin-top:2rem;" class="reveal">
       <a href="https://www.axisspineandsport.com/faq-about-chiropractor/" target="_blank" class="btn-ghost">See All FAQs →</a>
     </div>
-      </div><!-- end left col -->
-      <div class="faq-photo-panel reveal">
-        <img src="https://raw.githubusercontent.com/drdylanhernandez/axis-landing-pages/main/22-DSC05631.jpg" alt="Axis Spine and Sport interior">
-      </div>
-    </div><!-- end faq-inner -->
-  </div><!-- end sec-inner -->
+  </div>
 </section>
 
 <!-- FOOTER -->
