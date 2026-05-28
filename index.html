@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- META PIXEL — Replace YOUR_PIXEL_ID with your Facebook/Meta Pixel ID -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+// fbq('init', 'YOUR_PIXEL_ID');
+// fbq('track', 'PageView');
+</script>
+
+<!-- GOOGLE TAG — Replace YOUR_GA_ID with your Google Analytics / Ads tag ID (e.g. G-XXXXXXX or AW-XXXXXXX) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'YOUR_GA_ID');
+</script> -->
+
 <!-- Primary SEO -->
 <title>$59 New Patient Special — Axis Spine & Sport | Gilbert · Tempe · Phoenix</title>
 <meta name="description" content="Get a full consultation, exam, X-rays, percussion massage, and your first chiropractic adjustment for only $59. Corrective care plans with guaranteed results in under 30 days. Gilbert, Tempe & Phoenix, AZ.">
@@ -1728,39 +1751,7 @@ footer {
   <p class="footer-copy">© 2025 Axis Spine and Sport · Axis Management LLC dba Axis Spine and Sport · New patient special valid for first-time patients only · Gilbert · Tempe · Phoenix.</p>
 </footer>
 
-<!-- SCHEDULING MODAL -->
-<div class="modal-overlay" id="schedModal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-icon">📅</div>
-    <div class="modal-title">Choose Your Location</div>
-    <p class="modal-body">Pick the location you'd like to visit — you'll be taken directly to that clinic's online scheduling page to lock in your time.</p>
-    <div class="modal-locs">
-      <a class="modal-loc-btn" href="https://www.axisspineandsport.com/locations-schedule/" target="_blank" onclick="trackScheduleClick('Gilbert')">
-        <div class="modal-loc-left">
-          <div>📍 Gilbert</div>
-          <div class="modal-loc-addr">3341 E Queen Creek Rd, Ste 109</div>
-        </div>
-        <span class="modal-arrow">→</span>
-      </a>
-      <a class="modal-loc-btn" href="https://www.axisspineandsport.com/locations-schedule/" target="_blank" onclick="trackScheduleClick('Tempe')">
-        <div class="modal-loc-left">
-          <div>📍 Tempe</div>
-          <div class="modal-loc-addr">2155 E University Dr, Ste 110</div>
-        </div>
-        <span class="modal-arrow">→</span>
-      </a>
-      <a class="modal-loc-btn" href="https://www.axisspineandsport.com/locations-schedule/" target="_blank" onclick="trackScheduleClick('Phoenix')">
-        <div class="modal-loc-left">
-          <div>📍 Phoenix</div>
-          <div class="modal-loc-addr">4515 N 16th St, Ste 106</div>
-        </div>
-        <span class="modal-arrow">→</span>
-      </a>
-    </div>
-    <p class="modal-note">🔒 Your info is already saved. Just pick your time on the next page.</p>
-  </div>
-</div>
+<!-- SCHEDULING: Direct link to axisspineandsport.com/locations/ (no modal needed) -->
 
 <!-- STICKY MOBILE CTA -->
 <div class="mobile-cta-bar">
@@ -1774,6 +1765,8 @@ footer {
 const params = new URLSearchParams(window.location.search);
 const src = params.get('src') || params.get('utm_content') || null;
 const camp = params.get('utm_campaign') || null;
+const utmSource = params.get('utm_source') || null;
+const utmMedium = params.get('utm_medium') || null;
 
 const srcMap = {
   'ig-why':   'Instagram Ad — Why Hook',
@@ -1802,21 +1795,20 @@ if (resolvedSource) {
   setTimeout(() => badge.classList.remove('show'), 5500);
 }
 
-/* ── WORKER_URL ── */
-/* REPLACE with your Zapier or Make.com webhook URL */
+/* ── WORKER ENDPOINT ── */
 const WORKER_URL = 'https://axis-social-media-leads.drdylan.workers.dev';
 
 async function fireWorker(payload) {
   try {
     const res = await fetch(WORKER_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
     const data = await res.json();
     return data;
   } catch(e) {
-    console.warn("Worker error:", e);
+    console.warn('Worker error:', e);
     return null;
   }
 }
@@ -1843,44 +1835,37 @@ async function submitLead() {
     firstName: first, lastName: last, phone, email,
     location: loc,
     source: source || resolvedSource || 'Unknown',
-    utmSrc: src || '', utmCampaign: camp || '',
+    utmSrc: src || '',
+    utmSource: utmSource || '',
+    utmMedium: utmMedium || '',
+    utmCampaign: camp || '',
+    utmContent: src || '',
     event: 'form_submit',
     page: window.location.href,
     timestamp: new Date().toISOString(),
   };
 
-  /* Fire webhook: new lead alert */
-  await fireWorker(leadData);
+  /* Fire Worker: create lead in Airtable */
+  const result = await fireWorker(leadData);
+  if (result && result.recordId) {
+    leadData.recordId = result.recordId;
+  }
 
   document.getElementById('fFields').style.display = 'none';
   document.getElementById('fSuccess').style.display = 'block';
 }
 
-/* ── OPEN SCHEDULING MODAL ── */
+/* ── GO TO SCHEDULING ── */
 function goSchedule() {
-  document.getElementById('schedModal').classList.add('open');
-}
-
-function closeModal() {
-  document.getElementById('schedModal').classList.remove('open');
-}
-
-/* Close on overlay click */
-document.getElementById('schedModal').addEventListener('click', function(e) {
-  if (e.target === this) closeModal();
-});
-
-/* ── TRACK SCHEDULING CLICK + FIRE SECOND ALERT ── */
-async function trackScheduleClick(location) {
+  /* Fire schedule_click event to Worker */
   const payload = {
-    ...leadData,
     event: 'schedule_click',
-    schedulingLocation: location,
+    recordId: leadData.recordId || null,
     timestamp: new Date().toISOString(),
   };
-  /* Second webhook ping: patient clicked to schedule — you get notified */
-  await fireWorker(payload);
-  /* Don't prevent default — let the link open */
+  fireWorker(payload);
+  /* Open scheduling page directly — no modal needed */
+  window.open('https://www.axisspineandsport.com/locations/', '_blank');
 }
 
 /* ── SCROLL REVEAL ── */
@@ -1903,9 +1888,14 @@ function faq(btn) {
 }
 
 /* ── UTM on schedule links ── */
-const utmSuffix = src ? `?utm_source=instagram&utm_medium=paid&utm_content=${src}` : '';
+const utmParts = [];
+if (utmSource) utmParts.push(`utm_source=${encodeURIComponent(utmSource)}`);
+if (utmMedium) utmParts.push(`utm_medium=${encodeURIComponent(utmMedium)}`);
+if (src) utmParts.push(`utm_content=${encodeURIComponent(src)}`);
+if (camp) utmParts.push(`utm_campaign=${encodeURIComponent(camp)}`);
+const utmSuffix = utmParts.length ? '?' + utmParts.join('&') : '';
 if (utmSuffix) {
-  document.querySelectorAll('a[href*="locations-schedule"]').forEach(a => {
+  document.querySelectorAll('a[href*="locations"]').forEach(a => {
     if (!a.href.includes('utm_source')) a.href += utmSuffix;
   });
 }
