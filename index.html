@@ -1194,9 +1194,9 @@ footer {
   bottom:0; left:0; right:0;
   background:var(--gold);
   padding:1rem 1.5rem;
-  z-index:200;
+  z-index:9999;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   box-shadow:0 -4px 24px rgba(229,190,94,.3);
 }
 .mobile-cta-bar a {
@@ -1204,6 +1204,7 @@ footer {
   font-weight:900; font-size:1.05rem;
   letter-spacing:.1em; text-transform:uppercase;
   color:var(--dark-txt); text-decoration:none;
+  text-align:center;
 }
 .mobile-cta-bar-price {
   font-family:'Barlow Condensed',sans-serif;
@@ -1763,8 +1764,7 @@ footer {
 
 <!-- STICKY MOBILE CTA -->
 <div class="mobile-cta-bar">
-  <span class="mobile-cta-bar-price">$59 Special</span>
-  <a href="#book">Claim Your Appointment →</a>
+  <a href="#book">Claim Your $59 New Patient Special →</a>
 </div>
 
 <div class="utm-badge" id="utmBadge"></div>
