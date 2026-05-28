@@ -1772,12 +1772,26 @@ const dropMap = {
   'ig-offer': 'Instagram',
 };
 
+/* Map utm_source to dropdown values */
+const platformDropMap = {
+  'instagram': 'Instagram',
+  'facebook':  'Facebook',
+  'google':    'Google',
+  'linkedin':  'LinkedIn',
+  'tiktok':    'TikTok',
+  'youtube':   'YouTube',
+  'yelp':      'Yelp',
+};
+
 let resolvedSource = srcMap[src] || (src ? decodeURIComponent(src) : null);
 let leadData = {};
 
-if (resolvedSource) {
-  const sel = document.getElementById('fSrc');
-  if (dropMap[src]) sel.value = dropMap[src];
+/* Auto-select the Lead Source dropdown based on utm_source first, then fall back to utm_content mapping */
+const sel = document.getElementById('fSrc');
+if (utmSource && platformDropMap[utmSource.toLowerCase()]) {
+  sel.value = platformDropMap[utmSource.toLowerCase()];
+} else if (resolvedSource && dropMap[src]) {
+  sel.value = dropMap[src];
 }
 
 /* ── WORKER ENDPOINT ── */
@@ -1798,6 +1812,20 @@ async function fireWorker(payload) {
   }
 }
 
+/* ── PHONE FORMATTING ── */
+document.getElementById('fPhone').addEventListener('input', function(e) {
+  let val = e.target.value.replace(/\D/g, '');
+  if (val.length > 10) val = val.slice(0, 10);
+  if (val.length >= 7) {
+    val = '(' + val.slice(0,3) + ') ' + val.slice(3,6) + '-' + val.slice(6);
+  } else if (val.length >= 4) {
+    val = '(' + val.slice(0,3) + ') ' + val.slice(3);
+  } else if (val.length >= 1) {
+    val = '(' + val;
+  }
+  e.target.value = val;
+});
+
 /* ── SUBMIT FORM ── */
 async function submitLead() {
   const btn = document.getElementById('fBtn');
@@ -1813,11 +1841,25 @@ async function submitLead() {
     return;
   }
 
+  /* Validate phone: must be 10 digits */
+  const phoneDigits = phone.replace(/\D/g, '');
+  if (phoneDigits.length !== 10) {
+    alert('Please enter a valid 10-digit phone number.');
+    return;
+  }
+
+  /* Validate email format */
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
   btn.disabled = true;
   btn.textContent = 'Sending...';
 
   leadData = {
-    firstName: first, lastName: last, phone, email,
+    firstName: first, lastName: last, phone: phoneDigits, email,
     location: loc,
     source: source || resolvedSource || 'Unknown',
     utmSrc: src || '',
