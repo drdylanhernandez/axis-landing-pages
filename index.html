@@ -1802,26 +1802,22 @@ if (resolvedSource) {
   setTimeout(() => badge.classList.remove('show'), 5500);
 }
 
-/* ── WEBHOOK ── */
+/* ── WORKER_URL ── */
 /* REPLACE with your Zapier or Make.com webhook URL */
-const WEBHOOK = 'YOUR_ZAPIER_OR_MAKE_WEBHOOK_URL_HERE';
+const WORKER_URL = 'https://axis-social-media-leads.drdylan.workers.dev';
 
-async function fireWebhook(payload) {
-  if (WEBHOOK === 'YOUR_ZAPIER_OR_MAKE_WEBHOOK_URL_HERE') {
-    console.log('📋 Webhook payload (demo):', payload);
-    return true;
-  }
+async function fireWorker(payload) {
   try {
-    await fetch(WEBHOOK, {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(payload),
-      mode:'no-cors',
+    const res = await fetch(WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
     });
-    return true;
+    const data = await res.json();
+    return data;
   } catch(e) {
-    console.warn('Webhook error:', e);
-    return false;
+    console.warn("Worker error:", e);
+    return null;
   }
 }
 
@@ -1854,7 +1850,7 @@ async function submitLead() {
   };
 
   /* Fire webhook: new lead alert */
-  await fireWebhook(leadData);
+  await fireWorker(leadData);
 
   document.getElementById('fFields').style.display = 'none';
   document.getElementById('fSuccess').style.display = 'block';
@@ -1883,7 +1879,7 @@ async function trackScheduleClick(location) {
     timestamp: new Date().toISOString(),
   };
   /* Second webhook ping: patient clicked to schedule — you get notified */
-  await fireWebhook(payload);
+  await fireWorker(payload);
   /* Don't prevent default — let the link open */
 }
 
